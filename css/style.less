@@ -1,0 +1,186 @@
+@import "../librerias/bootstrap-3.3.5/less/bootstrap.less";
+
+@nav-color:             #777;
+@login-background:      #000;
+
+@autor-cuadro-background: #165dbe;
+@autor-cuadro-link:		#FFF;
+
+@nosotros-listaImagenes-heigth: 780px;
+@nosotros-listaImagenes-width: 1037px;
+
+nav{
+	font-size: 11px;
+}
+
+.nav{
+	height: 80px;
+
+	& li{
+		height: 80px;
+		
+		& a{
+			display: table-cell;
+			height: 80px;
+			vertical-align: middle;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		
+		&.redesSociales{
+			border-left: solid 1px @nav-color;
+		}
+	}
+}
+
+.navbar{
+	z-index: 2000;
+}
+
+.btnControlAcceso{
+	width: 170px;
+	background: @login-background;
+}
+
+.contenido{
+	& .banner{
+		width: 100%;
+		background: #6a5f5f;
+		position: relative;
+		
+		& .infoFotoAutor{
+			position: absolute;
+			bottom: 10px;
+			right: 30px;
+			color: @autor-cuadro-link;
+			
+			& span{
+				background: @autor-cuadro-background;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-left: 10px;
+				padding-right: 10px;
+				
+				margin-right: 20px;
+				& a{
+					color: @autor-cuadro-link;
+					padding-top: 100px;
+				}
+			}
+		}
+	}
+	
+	& .nosotros{
+		position: relative;
+		text-align: center;
+		
+		& .fotos{
+			position: absolute;
+			width: @nosotros-listaImagenes-width;
+			height: @nosotros-listaImagenes-heigth;
+			left: 200px;
+			
+			& .lista{
+				height: @nosotros-listaImagenes-heigth;
+				& [indice]{
+					position: absolute;
+					background: no-repeat;
+					
+					& a img.info{
+						position: absolute;
+						width: 15px;
+						bottom: 10px;
+						right: 10px;
+						z-index: 2000;
+					}
+					
+					& .anio{
+						background: black;
+						color: white;
+					}
+				}
+				
+				& [indice="1"]{
+					background: url("../img/index/img1.jpg");
+					bottom: 10px;
+					width: 145px;
+					height: 190px;
+					
+					& .anio{
+						padding-top: 50px;
+						padding-bottom: 30px;
+						padding-left: 10px;
+						padding-right: 10px;
+						text-align: center;
+						margin: 40px 30px 40px 30px;
+						height: 125px;
+						
+					}
+				}
+				
+				& [indice="2"]{
+					background: url("../img/index/img2.jpg");
+					width: 100px;
+					height: 140px;
+					bottom: 115px;
+					left: 145px;
+				}
+				
+				& [indice="3"]{
+					background: url("../img/index/img3.jpg");
+					width: 178px;
+					height: 187px;
+					bottom: 110px;
+					left: 245px;
+					
+					& .anio{
+						padding-top: 50px;
+						padding-bottom: 30px;
+						padding-left: 20px;
+						padding-right: 20px;
+						text-align: center;
+						margin: 30px 40px 30px 40px;
+						height: 125px;
+						
+					}
+				}
+				
+				& [indice="4"]{
+					background: url("../img/index/img4.jpg");
+					width: 206px;
+					height: 272px;
+					bottom: 115px;
+					left: 422px;
+				}
+				
+				& [indice="5"]{
+					background: url("../img/index/img5.jpg");
+					width: 131px;
+					height: 98px;
+					bottom: 8px;
+					left: 497px;
+				}
+				
+				& [indice="6"]{
+					background: url("../img/index/img6.jpg");
+					width: 119px;
+					height: 85px;
+					bottom: 400px;
+					left: 515px;
+				}
+				
+				& [indice="7"]{
+					background: url("../img/index/img7.jpg");
+					width: 510px;
+					height: 510px;
+					bottom: 200px;
+					left: 550px;
+				}
+			}			
+		}
+	}
+	
+	& img.fondo{
+		width: 100%;
+	}
+}
