@@ -6,6 +6,8 @@
 @autor-cuadro-background: #165dbe;
 @autor-cuadro-link:		#FFF;
 
+@head-titulo-color: white;
+
 @nosotros-listaImagenes-heigth: 780px;
 @nosotros-listaImagenes-width: 1037px;
 @nosotros-color-list: #165dbe;
@@ -47,6 +49,27 @@ nav{
 	}
 }
 
+.boxTextoIndex(@top, @left, @background: @nosotros-color-list){
+	top: @top;
+	left: @left;
+	text-align: justify;
+	font-size: 12px;
+	
+	& h1{
+		font-size: 45px;
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+	
+	& div.separador{
+		background: @nosotros-color-list;
+		width: 50px;
+		height: 10px;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+}
+
 .nav{
 	height: 80px;
 
@@ -80,6 +103,20 @@ nav{
 	position: absolute;
 	left: 49%;
 	bottom: 3%;
+	
+	& img{
+		width: 80%;
+	}
+	
+	&.left{
+		left: 5%;
+		bottom: 30%;
+	}
+	
+	&.right{
+		left: 86%;
+		bottom: 30%;
+	}
 }
 
 .contenido{
@@ -117,6 +154,24 @@ nav{
 			
 			& img{
 				width: 100%;
+			}
+			
+			& .explicacion{
+				position: absolute;
+				top: 10%;
+				width: 60%;
+				left: 20%;
+				
+				& .texto{
+					position: absolute;
+					top: 30%;
+					left: 10%;
+					width: 80%;
+					height: 40%;
+					text-align: center;
+					font-size: 17px;
+					color: @head-titulo-color;
+				}
 			}
 		}
 	}
@@ -244,24 +299,40 @@ nav{
 				
 				& [indice="11"]{
 					.nosotros-box(20%, 30%, 90%);
-					top: 18%;
-					left: 20%;
-					text-align: justify;
-					font-size: 12px;
-					
-					& h1{
-						font-size: 45px;
-					}
-					
-					& div.separador{
-						background: @nosotros-color-list;
-						width: 50px;
-						height: 10px;
-						margin-bottom: 20px;
-						margin-top: 20px;
-					}
+					.boxTextoIndex(18%, 20%);
 				}
 			}			
+		}
+	}
+	
+	& .empresas{
+		position: relative;
+		width: 100%;
+		text-align: center;
+		
+		& .container{
+			position: absolute;
+			top: 20%;
+			left: 7%;
+			
+			& .empresas{
+				background: white;
+				
+				& div{
+					height: 150px;
+					line-height: 150px;
+					vertical-align: middle;
+				}
+				
+				& img{
+					width: 70%;
+				}
+			}
+			
+			& .texto{
+				position: absolute;
+				.boxTextoIndex(50%, 10%);
+			}
 		}
 	}
 	
