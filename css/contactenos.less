@@ -1,0 +1,76 @@
+.contenido.contactenos{
+	position: relative;
+	width: 100%;
+	
+	.banner{
+		.titulo{
+			font-size: 60px;
+			color: white;
+			position: absolute;
+			text-align: center;
+			.posicionar(80%);
+			top: 20%;
+		}
+		
+		.divisor{
+			.posicionar(67%);
+			background: @azul;
+			height: 5px;
+			left: 0px;
+			top: 33%;
+		}
+		
+		.texto{
+			color: white;
+			font-size: 10px;
+			text-align: center;
+			.posicionar(30%);
+			top: 40%
+		}
+	}
+	
+	.formulario{
+		background: @contactenos-formulario-background;
+		.posicionar(100%);
+		
+		.container{
+			.posicionar(80%, 70%);
+			top: 20%;
+		}
+		
+		form{
+			h1{
+				color: @azul;
+				padding-top: 0px;
+				margin-top: 0px;
+			}
+			
+			input, textarea{
+				margin-bottom: 10px;
+				padding-left: 30px;
+				background: @contactenos-formulario-input-background;
+				color: @contactenos-formulario-input-color;
+				&::-webkit-input-placeholder { color: @contactenos-formulario-input-color}
+				&:-moz-placeholder { color: @contactenos-formulario-input-color}
+				&::-moz-placeholder { color: @contactenos-formulario-input-color}
+				&:-ms-input-placeholder { color: @contactenos-formulario-input-color}
+			}
+			
+			.iconos{
+				margin-bottom: 30px;
+			}
+			
+			.politicas{
+				font-size: 12px;
+				.btn{
+					color: white;
+					background: @azul;
+					.bordeRedondo(0px);
+					position: absolute;
+					right: 12%;
+				}
+			}
+		}
+		
+	}
+}
