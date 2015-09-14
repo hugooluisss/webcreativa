@@ -35,6 +35,33 @@ nav{
 	background: @login-background;
 }
 
+.bannerSecundario{
+	.titulo{
+		font-size: 60px;
+		color: white;
+		position: absolute;
+		text-align: center;
+		.posicionar(80%);
+		top: 20%;
+	}
+	
+	.divisor{
+		.posicionar(67%);
+		background: @azul;
+		height: 5px;
+		left: 0px;
+		top: 33%;
+	}
+	
+	.texto{
+		color: white;
+		font-size: 10px;
+		text-align: center;
+		.posicionar(30%);
+		top: 40%
+	}
+}
+
 .ancla{
 	position: absolute;
 	left: 49%;
@@ -61,3 +88,4 @@ img.fondo{
 
 @import "index.less";
 @import "contactenos.less";
+@import "galeria.less";
