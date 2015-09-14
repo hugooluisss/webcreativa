@@ -1,0 +1,55 @@
+.contenido.normatividad{
+	position: relative;
+	.plan{
+		.posicionar(80%);
+		padding-top: 100px;
+		.menu{
+			width: 20%;
+			float: left;
+			
+			ul{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			
+			li{
+				background: @normatividad-menu-background;
+				width: 100%;
+				padding-left: 50px;
+				padding-bottom: 5px;
+				padding-right: 5px;
+				padding-top: 5px;
+				
+				margin-bottom: 5px;
+				
+				&.active{
+					background: @azul;
+				}
+				
+				a{
+					color: white;
+					text-decoration: none;
+				}
+			}
+		}
+		
+		.descripcion{
+			float: left;
+			width: 79%;
+			padding: 0px 10px 10px 50px;
+			
+			h1{
+				font-size: 40px;
+				border-bottom: 5px solid @normatividad-titulo-border;
+				padding-top: 0px;
+				margin-top: 0px;
+				color: @normatividad-texto-color;
+			}
+			
+			p{
+				color: @normatividad-texto-color;
+			}
+		}
+	}
+}
