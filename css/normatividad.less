@@ -38,6 +38,7 @@
 			float: left;
 			width: 79%;
 			padding: 0px 10px 10px 50px;
+			overflow-x: hidden;
 			
 			h1{
 				font-size: 40px;
@@ -47,8 +48,60 @@
 				color: @normatividad-texto-color;
 			}
 			
+			.encabezado{
+				width: 100%;
+			}
+			
 			p{
 				color: @normatividad-texto-color;
+				margin-left: 40px;
+			}
+			
+			.lista{
+				float: left;
+				width: 30%;
+				background: red;
+				position: relative;
+				ul{
+					list-style: square;
+					margin-top: 0px;
+					margin-left: 55px;
+					width: 100%;
+					position: absolute;
+					top: 0px;
+					li{
+						color: @azul;
+						border-bottom: 1px solid @normatividad-border-color;
+						padding-top: 20px;
+						padding-bottom: 20px;
+						width: 100%;
+						
+						a{
+							color: black;
+						}
+						
+						&:last-child{
+							border: none;
+						}
+						
+						&:first-child{
+							padding-top: 0px;
+						}
+					}
+				}
+				
+				padding-right: 20px;
+			}
+			
+			.imagenLista{
+				width: 60%;
+				float: right;
+				overflow-x: hidden;
+				margin-left: 30px;
+				
+				img{
+					width: 100%;
+				}
 			}
 		}
 	}
