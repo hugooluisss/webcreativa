@@ -37,6 +37,12 @@
 			.imagenTexto, .texto{
 				float: right;
 			}
+			
+			.sinMargen{
+				margin-left: 0px;
+				margin-right: 0px;
+				padding-left: 10px;
+			}
 		}
 		
 		.der{
@@ -119,7 +125,25 @@
 			color: @color-texto;
 			width: 100%;
 			margin-bottom: 10px;
-
+			
+			.grupo{
+				position: relative;
+				display: inline-block;
+				
+				.mas{
+					position: absolute;
+					
+					&.izquierda{
+						top: 50px;
+						left: 50px;
+					}
+					
+					&.derecha{
+						top: 50px;
+						right: 50px;
+					}
+				}
+			}
 			
 			
 			.background{
