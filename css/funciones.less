@@ -18,8 +18,9 @@
 		margin-top: (100% - @porcentaje) / 2;
 		padding-bottom: (100% - @porcentaje) / 2;
 		padding-top: (100% - @porcentaje) / 2;
-		background: @nosotros-color-box;
+		background: black;
 		color: @nosotros-color-anio;
+		.opacidad(0.9);
 		position: absolute;
 		text-align: center;
 	}
@@ -72,4 +73,14 @@
 
 .yanone(){
 	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.khand(){
+	font-family: 'Khand', sans-serif;
+}
+
+.opacidad(@cant: 0.5){
+	opacity: @cant;
+	@cant2: @cant * 100;
+	-moz-opacity: @cant;
 }

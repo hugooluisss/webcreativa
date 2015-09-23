@@ -1,7 +1,175 @@
-footer{
-	background: white;
+.footer{
+	position: relative;
+	width: 100%;
+	padding-bottom: 0px;
+	overflow-x: hidden;
 	
-	.float-left{
-		float: left;
+	.localizacion{
+		background: red;
+		
+		.ancla-arriba{
+			position: absolute;
+			top: 65%;
+			left: 28%;
+		}
+		
+		.float-left{
+			float: left;
+		}
+		
+		.col-i{
+			width: 45%;
+			margin-right: 2%;
+		}
+		
+		.col-d{
+			width: 45%;
+		}
+		
+		.ubicacion{
+			border: 1px @pie-ubicacion-border-color solid;
+			border-left: none;
+			border-right: none;
+			width: 70%;
+			float: right;
+			margin-top: 20%;
+			padding-top: 5%;
+			padding-bottom: 5%;
+	
+			
+			div{
+				width: 50%;
+				float: left;
+			}
+			
+			p{
+				padding-bottom: 20%;
+			}
+			
+			.logo{
+				padding-top: 7%;
+				
+				img{
+					width: 80%;
+				}
+			}
+			
+			.btn{
+				background: @azul;
+				color: white;
+				width: 100%;
+				.bordeRedondo(0px);
+			}
+		}
+	}
+	
+	.menu-footer{
+		position: absolute;
+		width: 100%;
+		top: 90%;
+		
+		.iconos{
+			width: 80%;
+			margin-left: 10%;
+			color: @color-texto;
+			text-align: center;
+			.yanone();
+			font-size: 14px;
+			
+			h1{
+				font-size: 18px;
+			}
+			
+			a{
+				color: @color-texto;
+			}
+			
+			.elemento{
+				float: left;
+			}
+
+			.edificio{
+				width: 200px;
+				text-align: center;
+				z-index: 100000;
+			}
+			
+			.telefono, .email, .cerrar{
+				img{
+					margin-top: 20px;
+				}
+			}
+			
+			.politicas{
+				padding-top: 10%;
+				text-align: left;
+				margin-right: 50px;
+				
+				ul{
+					border-left: 1px solid @color-texto;
+					list-style-type: square;
+					color: @color-texto;
+					.raleway();
+					width: 180px;
+				}
+			}
+			
+			.email{
+				margin-left: 10%;
+				margin-right: 10%;
+			}
+		}
+		
+		.fondo{
+			top: 26%;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background: @pie-menu-bg;
+			z-index: -1;
+		}
+	}
+	
+	.menu2-footer{
+		width: 100%;
+		background: @pie-menu2-bg;
+		position: absolute;
+		top: 128%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		
+		.elementos{
+			width: 80%;
+			margin-left: 10%;
+		
+			ul{
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				.khand();
+				font-size: 18px;
+				
+				li{
+					display: inline;
+					float: left;
+					padding-right: 20px;
+					
+					a{
+						display: block;
+						color: @pie-menu2-color;
+					}
+				}
+			}
+			
+			span, img{
+				float: right;
+				color: @color-texto;
+				margin-left: 20px;
+			}
+			
+			img{
+				margin-top: 5px;
+			}
+		}
 	}
 }
