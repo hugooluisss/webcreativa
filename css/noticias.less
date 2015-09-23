@@ -198,12 +198,89 @@
 	background: white;
 	
 	.body{
-		position: absolute;
-		width: 80%;
-		left: 10%;
+		width: 100%;
+		.noticias{
+			position: absolute;
+			width: 80%;
+			left: 10%;
+			top: 90%;
+		}
 		
-		.noticia{
+		.cargarMas{
+			background: black;
+			color: @color-texto;
+			text-align: center;
+			position: absolute;
+			width: 100%;
+			margin-top: 65%;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		
+		
+		.noti{
+			width: 50%;
+			float: left;
+			margin-bottom: 150px;
+			padding-left: 10px;
+			padding-right: 10px;
 			
+			.contenedor{
+				position: relative;
+				width: 100%;
+			}
+			
+			.marco{
+				border: 1px solid black;
+				width: 90%;
+				height: 90%;
+				z-index: 1000;
+				position: absolute;
+				left: 5%;
+				top: 5%;
+			}
+			
+			.imagen-new{
+				width: 100%;
+				z-index: -1;
+			}
+			
+			.datos{
+				position: absolute;
+				top: 90%;
+				left: 15%;
+				z-index: 100001;
+				width: 80%;
+				
+				.fecha, .titulo{
+					height: 100px;
+					vertical-align: middle;
+					float: left;
+					padding: 20px;
+				}
+				
+				.fecha{
+					background: black;
+					color: @color-texto;
+					width: 20%;
+				}
+				
+				.titulo{
+					background: @noticias-contenido-btn-bg;
+					color: @color-texto;
+					font-size: 25px;
+					width: 80%;
+				}
+				
+				.btn{
+					background: @azul;
+					color: white;
+					.bordeRedondo(0px);
+					float: right;
+					margin-top: 2px;
+					width: 100px;
+				}
+			}
 		}
 	}
 }

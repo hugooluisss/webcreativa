@@ -2,8 +2,8 @@
 @import "variables.less";
 @import "funciones.less";
 
-nav{
-	font-size: 10px;
+body{
+	.yanone();
 }
 
 .nav{
@@ -42,30 +42,30 @@ nav{
 		position: absolute;
 		text-align: center;
 		.posicionar(80%);
-		top: 20%;
+		top: 25%;
 	}
 	
 	.divisor{
-		.posicionar(67%);
+		.posicionar(80%);
 		background: @azul;
 		height: 5px;
 		left: 0px;
-		top: 33%;
+		top: 43%;
 	}
 	
 	.texto{
 		color: white;
 		font-size: 10px;
 		text-align: center;
-		.posicionar(30%);
-		top: 40%
+		.posicionar(40%);
+		top: 50%
 	}
 }
 
 .ancla{
 	position: absolute;
 	left: 49%;
-	bottom: 3%;
+	top: 81%;
 	
 	img{
 		width: 80%;
@@ -73,12 +73,12 @@ nav{
 	
 	&.left{
 		left: 5%;
-		bottom: 30%;
+		top: 61%;
 	}
 	
 	&.right{
-		left: 86%;
-		bottom: 30%;
+		left: 81%;
+		top: 61%;
 	}
 }
 
@@ -86,9 +86,13 @@ img.fondo{
 	width: 100%;
 }
 
+
+
 @import "index.less";
 @import "contactenos.less";
 @import "galeria.less";
 @import "normatividad.less";
 @import "nosotros.less";
 @import "noticias.less";
+@import "oficinas.less";
+@import "pie.less";

@@ -34,11 +34,14 @@
 	left: @left;
 	text-align: justify;
 	font-size: 12px;
+	.raleway();
 	
 	& h1{
-		font-size: 45px;
+		font-size: 80px;
 		margin-top: 0px;
 		padding-top: 0px;
+		
+		.yanone();
 	}
 	
 	& div.separador{
@@ -61,4 +64,12 @@
 	width: @width;
 	height: @height;
 	left: (100% - @width) / 2;
+}
+
+.raleway(){
+	font-family: 'Raleway', sans-serif;
+}
+
+.yanone(){
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 }
