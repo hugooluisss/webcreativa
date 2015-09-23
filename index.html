@@ -3,12 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<title>webcreativa</title>
-		<meta name="description" content="">
-		<meta name="author" content="">
-		<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Khand' rel='stylesheet' type='text/css'>
-		<link type="text/css" rel="stylesheet/less" href="css/style.less">
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css' />
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css' />
+		<link href='https://fonts.googleapis.com/css?family=Khand' rel='stylesheet' type='text/css' />
+		<link type="text/css" rel="stylesheet/less" href="css/style.less" />
+		
+		<script type="text/javascript" src="js/jQuery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/load.js"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -36,7 +39,7 @@
 					<li class="divider"></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Síguenos</a></li>
+					<li><a href="#" style="color: white">Síguenos</a></li>
 					<li class="redesSociales"><a href="#"><img src="img/redesSociales/fb.png" title="facebook"/></a></li>
 					<li class="redesSociales"><a href="#"><img src="img/redesSociales/twitter.png" title="twitter"/></a></li>
 					<li class="redesSociales"><a href="#"><img src="img/redesSociales/plus.png" title="g+"/></a></li>
@@ -48,8 +51,8 @@
 		<div class="contenido home">
 			<div class="banner">
 				<div class="infoFotoAutor">
-					<span><a href="#">Link dueño de la foto</a></span>
 					<img src="img/index/infoAutor.png"/>
+					<span class="autor"><a href="#">Link dueño de la foto</a></span>
 				</div>
 				<img class="fondo" src="img/index/banner.png"/>
 				<div class="galeriaBanner">
@@ -144,7 +147,7 @@
 							<div class="texto">
 								<h1>EMPRESAS</h1>
 								<div class="separador"></div>
-								<p>En 1967 Rodrigo Uribe Echavarría, el entonces gerente de la textilera, pensó en levantar un edificio para reemplazar la vieja edificación ubicada en la esquina de ...</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 							</div>
 						</div>
 						<div class="col-xs-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-offset-2 col-xs-6 col-md-6 col-sm-6 col-lg-6">
@@ -274,9 +277,7 @@
 						<br />
 						<a href="#" class="ancla-arriba"><img src="img/pie/arriba.png" /></a>
 					</div>
-					<div class="float-left mapa col-d">
-						<img src="img/pie/mapa.jpg"/>
-					</div>
+					<div class="float-left mapa col-d"><img src="img/pie/mapa.jpg" /></div>
 				</div>
 				<div class="menu-footer">
 					<div class="fondo"></div>
@@ -303,11 +304,13 @@
 							info@edificiocentrocoltejerph.com.co 
 						</div>
 						<div class="cerrar elemento">
-							<img src="img/pie/cerrar.png"/>
-							<h1>CERRAR</h1>
-							
+							<a href="#" id="btnCerrar">
+								<img src="img/pie/cerrar.png"/>
+								<h1>CERRAR</h1>
+							</a>
 						</div>
 					</div>
+					<br />
 				</div>
 				<div class="menu2-footer">
 					<div class="elementos">

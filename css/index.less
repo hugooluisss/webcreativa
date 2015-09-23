@@ -11,20 +11,32 @@
 			top: 85%;
 			right: 0%;
 			color: @autor-cuadro-link;
-			background: url(@autor-cuadro-background) no-repeat left center;
+			
+			span, img{
+				float: right
+			}
 			
 			padding-top: 0px;
 			
+			img{
+				cursor: pointer;
+			}
+			
+			img:hover + .autor {
+			    display: block;
+			}
+			
 			span{
-				padding-left: 10px;
-				padding-right: 10px;
-				
-				margin-right: 100px;
+				display: none;
 				width: 200px;
+				height: 50px;
+				vertical-align: middle;
+				background: url(@autor-cuadro-background) no-repeat left center;
+				padding-top: 12px;
+				padding-left: 10px;
 				
 				a{
 					color: @autor-cuadro-link;
-					padding-top: 10px;
 				}
 			}
 		}
@@ -128,7 +140,7 @@
 						.opacidad(0.9);
 						background: black;
 						color: @nav-color;
-						font-size: 11px;
+						font-size: 12px;
 						padding: 20px 10px 20px 10px;
 						top: 68%;
 						left: 25%;
@@ -161,7 +173,7 @@
 							
 							span{
 								color: @nav-color;
-								font-size: 10px;
+								font-size: 14px;
 							}
 						}
 					}
@@ -192,9 +204,11 @@
 				}
 				
 				[indice="11"]{
-					.nosotros-box(20%, 30%, 90%);
-					.boxTextoIndex(18%, 20%);
+					.nosotros-box(22%, 35%, 90%);
+					.boxTextoIndex(13%, 20%);
 					.raleway();
+					
+					color: #808386;
 				}
 			}			
 		}
@@ -323,10 +337,11 @@
 						padding-top: 3%;
 						position: absolute;
 						left: 35%;
-						font-size: 20px;
+						font-size: 21px;
 						margin-left: 2px;
 						vertical-align: middle;
 						.raleway();
+						font:lighter;
 					}
 					
 					.btn{
@@ -360,8 +375,8 @@
 					width: 15px;
 					position: absolute;
 					margin-left: 90%;
-					margin-top: 90%;
-					z-index: 2000;
+					margin-top: 125%;
+					z-index: 500;
 				}
 				
 						
