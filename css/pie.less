@@ -8,7 +8,6 @@
 	
 	.mapa{
 		text-align: right;
-		background: red;
 		img{
 			width: 130%;
 			height: 100%;
@@ -18,7 +17,7 @@
 	.localizacion{
 		position: absolute;
 		width: 100%;
-		
+		overflow-y: hidden;
 		.ancla-arriba{
 			position: absolute;
 			top: 65%;
@@ -147,7 +146,7 @@
 		width: 100%;
 		background: @pie-menu2-bg;
 		position: absolute;
-		bottom: 0%;
+		top: 94%;
 		padding-top: 10px;
 		padding-bottom: 10px;
 		z-index: 2000000;
@@ -155,6 +154,125 @@
 		.elementos{
 			width: 80%;
 			margin-left: 10%;
+		
+			ul{
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				.khand();
+				font-size: 18px;
+				
+				li{
+					display: inline;
+					float: left;
+					padding-right: 20px;
+					
+					a{
+						display: block;
+						color: @pie-menu2-color;
+					}
+				}
+			}
+			
+			span, img{
+				float: right;
+				color: @color-texto;
+				margin-left: 20px;
+			}
+			
+			img{
+				margin-top: 5px;
+			}
+		}
+	}
+}
+
+.footer2{
+	display: none;
+	position: absolute;
+	padding-bottom: 0px;
+	overflow-x: hidden;
+	width: 100%;
+	height: 280px;
+	
+	.menu-footer{
+		width: 100%;
+		z-index: 1000;
+		
+		.iconos{
+			width: 80%;
+			margin-left: 10%;
+			color: @color-texto;
+			text-align: center;
+			.yanone();
+			font-size: 14px;
+			
+			h1{
+				font-size: 18px;
+			}
+			
+			a{
+				color: @color-texto;
+			}
+			
+			.elemento{
+				float: left;
+			}
+
+			.edificio{
+				width: 200px;
+				text-align: center;
+				z-index: 100000;
+			}
+			
+			.telefono, .email, .cerrar{
+				img{
+					margin-top: 20px;
+				}
+			}
+			
+			.politicas{
+				padding-top: 10%;
+				text-align: left;
+				margin-right: 50px;
+				
+				ul{
+					border-left: 1px solid @color-texto;
+					list-style-type: square;
+					color: @color-texto;
+					.raleway();
+					width: 180px;
+				}
+			}
+			
+			.email{
+				margin-left: 10%;
+				margin-right: 10%;
+			}
+		}
+		
+		.fondo{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background: @pie-menu-bg;
+			z-index: -1;
+		}
+	}
+	
+	.menu2-footer{
+		width: 100%;
+		position: absolute;
+		background: @pie-menu2-bg;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		z-index: 3000000;
+		top: 85%;
+		
+		.elementos{
+			width: 80%;
+			margin-left: 10%;
+			padding-bottom: 20px;
 		
 			ul{
 				list-style-type: none;

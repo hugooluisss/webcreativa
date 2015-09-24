@@ -1,5 +1,11 @@
 $( document ).ready(function() {
     $("#btnCerrar").click(function(){
-    	$(".localizacion").setStyle("width: 0px");
+    	$(".footer").hide();
+    	$(".footer2").show();
+    });
+    
+    $("#btnAbrir").click(function(){
+    	$(".footer").show();
+    	$(".footer2").hide();
     });
 });
