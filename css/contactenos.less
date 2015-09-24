@@ -1,12 +1,53 @@
 .contenido.contactenos{
 	position: relative;
 	width: 100%;
+	height: 100%;
+	
+	.banner{
+		position: relative;
+		.titulo{
+			color: white;
+			position: absolute;
+			text-align: center;
+			.posicionar(80%);
+			top: 25%;
+			
+			span{
+				font-size: 60px;
+				.raleway();
+				font-weight: bold;
+				border-top: 5px solid @nosotros-color-box;
+				padding-top: 20px;
+			}
+		}
+		
+		.divisor{
+			.posicionar(67%);
+			background: @azul;
+			height: 5px;
+			left: 0px;
+			top: 40%;
+		}
+		
+		.texto{
+			color: white;
+			font-size: 10px;
+			text-align: justify;
+			.posicionar(30%);
+			top: 45%;
+			.raleway();
+		}
+	}
 	
 	.formulario{
 		background: @contactenos-formulario-background;
-		.posicionar(100%);
+		position: relative;
+		width: 100%;
+		height: 100%;
+		padding-bottom: 10%;
+		padding-top: 10%;
 		
-		.container{
+		.contenedor{
 			.posicionar(80%, 70%);
 			top: 20%;
 		}
@@ -45,5 +86,10 @@
 			}
 		}
 		
+	}
+	
+	.footer{
+		width: 100%;
+		height: 60%;
 	}
 }
