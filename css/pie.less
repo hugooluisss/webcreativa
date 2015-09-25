@@ -1,4 +1,4 @@
-.footer{
+.footer, .footer2{
 	position: absolute;
 	padding-bottom: 0px;
 	overflow-x: hidden;
@@ -6,13 +6,13 @@
 	height: 100%;
 	overflow: hidden;
 	background: white;
-	clear: both;
+	
 	
 	.mapa{
 		text-align: right;
 		img{
 			width: 130%;
-			height: 100%;
+			height: 500px;
 		}
 	}
 	
@@ -93,6 +93,13 @@
 			
 			h1{
 				font-size: 18px;
+				margin-top: 12px;
+				padding-bottom: 10px;
+				border-bottom: 1px solid white;
+				
+				&.sinBorde{
+					border: none;
+				}
 			}
 			
 			a{
@@ -126,6 +133,9 @@
 					color: @color-texto;
 					.raleway();
 					width: 180px;
+					li{
+						margin-bottom: 13px;
+					}
 				}
 			}
 			
@@ -192,119 +202,26 @@
 
 .footer2{
 	display: none;
-	position: absolute;
 	padding-bottom: 0px;
 	overflow-x: hidden;
 	width: 100%;
-	height: 300px;
+	height: 240px;
+	z-index: 1;
 	
 	.menu-footer{
 		width: 100%;
 		z-index: 1000;
+		top: 0px;
 		
-		.iconos{
-			width: 80%;
-			margin-left: 10%;
-			color: @color-texto;
-			text-align: center;
-			.yanone();
-			font-size: 14px;
-			
-			h1{
-				font-size: 18px;
-			}
-			
-			a{
-				color: @color-texto;
-			}
-			
-			.elemento{
-				float: left;
-			}
-
-			.edificio{
-				width: 200px;
-				text-align: center;
-				z-index: 100000;
-			}
-			
-			.telefono, .email, .cerrar{
-				img{
-					margin-top: 20px;
-				}
-			}
-			
-			.politicas{
-				padding-top: 10%;
-				text-align: left;
-				margin-right: 50px;
-				
-				ul{
-					border-left: 1px solid @color-texto;
-					list-style-type: square;
-					color: @color-texto;
-					.raleway();
-					width: 180px;
-				}
-			}
-			
-			.email{
-				margin-left: 10%;
-				margin-right: 10%;
-			}
-		}
 		
 		.fondo{
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			background: @pie-menu-bg;
+			top: 0px;
 			z-index: -1;
 		}
 	}
 	
 	.menu2-footer{
-		width: 100%;
-		position: absolute;
-		background: @pie-menu2-bg;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		z-index: 3000000;
-		top: 85%;
-		
-		.elementos{
-			width: 80%;
-			margin-left: 10%;
-			padding-bottom: 20px;
-		
-			ul{
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-				.khand();
-				font-size: 18px;
-				
-				li{
-					display: inline;
-					float: left;
-					padding-right: 20px;
-					
-					a{
-						display: block;
-						color: @pie-menu2-color;
-					}
-				}
-			}
-			
-			span, img{
-				float: right;
-				color: @color-texto;
-				margin-left: 20px;
-			}
-			
-			img{
-				margin-top: 5px;
-			}
-		}
+		bottom: 0px;
+		top: auto;
 	}
 }
