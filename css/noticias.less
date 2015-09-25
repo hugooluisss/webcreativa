@@ -6,17 +6,27 @@
 		background: @noticias-migapan-bg;
 		display: inline-block;
 		color: @color-texto;
+		.bordeRedondo(0px);
+		font-size: 14px;
+		
+		.raleway();
+		
+		a{
+			color: white;
+		}
+		
 		li:before {
 			content: ">";
 			padding-right: 5px;
+			color: #232526;
 		}
 	}
 	
 	.newPrincipal{
 		position: absolute;
-		top: 10%;
 		width: @noticias-contenido-width;
-		left: 15%;
+		left: (100% - @noticias-contenido-width) / 2;
+		top: 25%;
 		
 		.img-noticia{
 			width: 100%;
@@ -38,8 +48,10 @@
 			
 			.descripcion{
 				position: absolute;
-				bottom: 10%;
-				left: 10%;
+				bottom: 5%;
+				left: 2%;
+				
+				.raleway();
 				
 				ul{
 					list-style: none;
@@ -61,22 +73,27 @@
 			.fecha{
 				text-align: center;
 				position: absolute;
-				bottom: 26.0%;
-				left: 24.7%;
+				bottom: 23.0%;
+				left: 19.5%;
 				background: @noticias-fecha-bg;
 				padding: 15px 15px 15px 15px;
 				width: 150px;
 				color: @color-texto;
+				.yanone();
+				font-size: 20px;
+				font-weight: 100;
 			}
 			
 			.title{
 				position: absolute;
-				bottom: 12%;
-				left: 24.7%;
+				bottom: 6.8%;
+				left: 19.5%;
 				font-size: 32px;
 				padding: 15px 15px 15px 15px;
 				background: #000;
 				color: @color-texto;
+				.yanone();
+				font-weight: 100;
 			}
 		}
 	}
@@ -87,7 +104,6 @@
 		color: @noticias-contenido-color;
 		width: 100%;
 		text-align: center;
-		padding-top: 120px;
 		z-index: -1;
 		
 		.textoNoticia{
@@ -97,6 +113,7 @@
 			margin-left: (100% - @noticias-contenido-width) / 2;
 			padding: 100px 50px 50px 50px;
 			background: white;
+			.raleway();
 			
 			.btn{
 				background: @noticias-contenido-btn-bg;
@@ -121,6 +138,7 @@
 					.total{
 						font-weight: bold;
 						font-size: 18px;
+						font-family: helvetica;
 					}
 					
 					.stars{
@@ -155,10 +173,18 @@
 				}
 				
 				.comentario{
-					margin-top: 20px;
+					margin-top: 25px;
 					
 					.titulo{
 						font-weight: bold;
+						font-family: helvetica;
+						padding-left: 15px;
+					}
+					
+					.comment{
+						padding-left: 15px;
+						font-family: helvetica;
+						font-weight: normal;
 					}
 					
 					small{
@@ -168,7 +194,8 @@
 					
 					.actions{
 						color: @noticias-start-count-bg;
-					
+						padding-left: 15px;
+						
 						a{
 							color: @noticias-start-count-bg;
 						}
@@ -184,8 +211,10 @@
 						margin-left: 30px;
 					}
 					
-					background: url(@noticias-disqus) no-repeat;
-					background-position: left;
+					.bg{
+						background: url(@noticias-disqus) no-repeat;
+						background-position: right;
+					}
 				}
 			}
 		}
