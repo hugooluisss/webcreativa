@@ -21,10 +21,14 @@
 		width: 100%;
 		overflow-y: hidden;
 		overflow-x: hidden;
+		
 		.ancla-arriba{
 			position: absolute;
-			top: 65%;
+			top: 83%;
 			left: 28%;
+			img{
+				width: 80%;
+			}
 		}
 		
 		.float-left{
@@ -34,6 +38,7 @@
 		.col-i{
 			width: 45%;
 			margin-right: 2%;
+			padding-top: 100px;
 		}
 		
 		.col-d{
@@ -45,10 +50,11 @@
 			border: 1px @pie-ubicacion-border-color solid;
 			border-left: none;
 			border-right: none;
-			width: 70%;
+			width: 60%;
 			float: right;
 			padding-top: 5%;
 			padding-bottom: 5%;
+			margin-right: 10px;
 			
 			div{
 				width: 50%;
@@ -56,22 +62,43 @@
 			}
 			
 			p{
-				padding-bottom: 20%;
+				padding-bottom: 0%;
 			}
 			
 			.logo{
-				padding-top: 7%;
+				padding-top: 2%;
 				
 				img{
 					width: 80%;
 				}
 			}
 			
+			.direccion{
+				h1{
+					text-transform: uppercase;
+					color: @azul;
+					font-size: 40px;
+					
+					.yanone();
+					font-weight: 100;
+				}
+				
+				color: #656565;
+				.raleway();
+				font-weight: 100;
+			}
+			
 			.btn{
 				background: @azul;
 				color: white;
-				width: 100%;
+				width: 150px;
+				margin-top: 0px;
+				padding-top: 3px;
+				padding-bottom: 3px;
 				.bordeRedondo(0px);
+				
+				.yanone();
+				font-weight: 100;
 			}
 		}
 	}
@@ -84,8 +111,8 @@
 		z-index: 1000;
 		
 		.iconos{
-			width: 80%;
-			margin-left: 10%;
+			width: 70%;
+			margin-left: 15%;
 			color: #dadbdb;
 			text-align: center;
 			.yanone();

@@ -5,14 +5,14 @@
 	.breadcrumb{
 		background: @noticias-migapan-bg;
 		display: inline-block;
-		color: @color-texto;
+		color: #8b8e91;
 		.bordeRedondo(0px);
-		font-size: 14px;
+		font-size: 12px;
 		
 		.raleway();
 		
 		a{
-			color: white;
+			color: #8b8e91;;
 		}
 		
 		li:before {
@@ -63,37 +63,40 @@
 						background: @noticias-btn-bg;
 						border: none;
 						.bordeRedondo(0px);
-						width: 100px;
+						width: 70px;
 						text-align: center;
+						padding-top: 10px;
 						margin-top: 2px;
+						
+						.raleway();
+						font-weight: 100;
+						font-size: 9px;
 					}
 				}
 			}
 			
+			.fecha, .title{
+				padding: 10px 10px 10px 10px;
+				.yanone();
+				color: @color-texto;
+				font-weight: 100;
+				position: absolute;
+			}
+			
 			.fecha{
 				text-align: center;
-				position: absolute;
-				bottom: 23.0%;
-				left: 19.5%;
+				bottom: 22.5%;
+				left: 15%;
 				background: @noticias-fecha-bg;
-				padding: 15px 15px 15px 15px;
 				width: 150px;
-				color: @color-texto;
-				.yanone();
-				font-size: 20px;
-				font-weight: 100;
+				font-size: 18px;
 			}
 			
 			.title{
-				position: absolute;
 				bottom: 6.8%;
-				left: 19.5%;
-				font-size: 32px;
-				padding: 15px 15px 15px 15px;
+				left: 15%;
+				font-size: 48px;
 				background: #000;
-				color: @color-texto;
-				.yanone();
-				font-weight: 100;
 			}
 		}
 	}

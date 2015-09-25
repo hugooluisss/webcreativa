@@ -1,5 +1,11 @@
 .contenido.normatividad{
 	position: relative;
+	background: #f7f9fa;
+	.banner{
+		.divisor{
+			width: 74%;
+		}
+	}
 	
 	.plan{
 		background: #f7f9fa;
@@ -52,21 +58,36 @@
 			padding-bottom: 50px;
 			
 			h1{
-				font-size: 40px;
+				font-size: 45px;
 				border-bottom: 5px solid @normatividad-titulo-border;
 				padding-top: 0px;
 				margin-top: 0px;
+				padding-bottom: 20px;
+				margin-bottom: 40px;
 				color: @normatividad-texto-color;
 				font: lighter;
+				
+				.raleway();
+				font-weight: 300;
+			}
+			
+			.youtube-player{
+				margin-bottom: 20px;
 			}
 			
 			.encabezado{
 				width: 100%;
+				margin-bottom: 20px;
 			}
 			
 			p{
 				color: @normatividad-texto-color;
 				text-align: justify;
+				
+			}
+			
+			.lista, .imagenLista{
+				margin-top: 20px;
 			}
 			
 			.lista{
