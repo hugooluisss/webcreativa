@@ -38,18 +38,17 @@
 			
 			.marco{
 				border: 1px solid black;
-				border-bottom: none;
-				width: 90%;
-				height: 95%;
+				width: 95%;
+				height: 90%;
 				position: absolute;
 				top: 5%;
-				left: 5%;
+				left: 2.5%;
 			}
 			
 			.descripcion{
 				position: absolute;
 				bottom: 5%;
-				left: 2%;
+				left: .7%;
 				
 				.raleway();
 				
@@ -63,14 +62,20 @@
 						background: @noticias-btn-bg;
 						border: none;
 						.bordeRedondo(0px);
-						width: 70px;
+						width: 55px;
 						text-align: center;
 						padding-top: 10px;
 						margin-top: 2px;
+						padding-left: 3px;
 						
 						.raleway();
 						font-weight: 100;
 						font-size: 9px;
+					}
+					
+					.social{
+						font-size: 12px;
+						padding-left: 13px;
 					}
 				}
 			}
@@ -85,16 +90,17 @@
 			
 			.fecha{
 				text-align: center;
-				bottom: 22.5%;
-				left: 15%;
+				bottom: 25.2%;
+				left: 12.6%;
 				background: @noticias-fecha-bg;
 				width: 150px;
 				font-size: 18px;
+				margin-bottom: 1px;
 			}
 			
 			.title{
 				bottom: 6.8%;
-				left: 15%;
+				left: 12.6%;
 				font-size: 48px;
 				background: #000;
 			}
@@ -102,7 +108,8 @@
 	}
 	
 	.news-contenido{
-		position: absolute;
+		position: relative;
+		
 		background: @noticias-bg;
 		color: @noticias-contenido-color;
 		width: 100%;
@@ -117,7 +124,7 @@
 			padding: 100px 50px 50px 50px;
 			background: white;
 			.raleway();
-			
+			margin-bottom: 100px;
 			.btn{
 				background: @noticias-contenido-btn-bg;
 				padding: 15px 25px 15px 25px;
@@ -150,6 +157,7 @@
 					.stars{
 						text-align: right;
 						padding-right: 0px;
+						vertical-align: text-top;
 						
 						.start{
 							padding: 0px 0px 0px 0px;
@@ -165,7 +173,7 @@
 						.punt{
 							margin-left: 10px;
 							background: url("../img/noticias/count.png") no-repeat;
-							padding: 3px 3px 3px 3px;
+							padding: 0px 3px 3px 3px;
 							float: right;
 							width: 30px;
 							margin-right: 10px;
@@ -175,17 +183,37 @@
 					
 					margin-bottom: 30px;
 				}
-				
-				span{
+								
+				.opciones{
+					font-size: 10px;
+					div{
+						&.share{
+							text-align: right;
+							width: 160px;
+							
+							.fa-gear{
+								margin-left: 20px;
+							}
+						}
+						
+						.complete{
+							width: 300px;
+						}
+					}
+				}
+
+				span, div.share{
 					padding: 15px 10px 10px 10px;
 					border-bottom: 2px solid @noticias-start-count-bg;
 					float: left;
 					color: @noticias-start-count-bg;
 					font-size: 12px;
+					text-align: right;
 					
 					&.complete{
-						width: 100%;
+						width: 600px;
 						position: absolute;
+						bottom: 0px;
 					}
 					
 					&.resaltar{
@@ -197,10 +225,12 @@
 				
 				.comentario{
 					margin-top: 25px;
+					margin-bottom: 40px;
 					
 					.titulo{
 						font-weight: bold;
 						font-family: helvetica;
+						font-size: 13px;
 						padding-left: 15px;
 					}
 					
@@ -213,11 +243,13 @@
 					small{
 						color: @noticias-start-count-bg;
 						margin-left: 50px;
+						font-size: 8px;
 					}
 					
 					.actions{
 						color: @noticias-start-count-bg;
 						padding-left: 15px;
+						font-size: 12px;
 						
 						a{
 							color: @noticias-start-count-bg;
@@ -226,20 +258,50 @@
 				}
 				
 				.pie{
-					margin-top: 60px;
+					margin-top: 20px;
+					padding-left: 0px;
+					margin-left: 0px;
+					
 					border: none;
-					width: 100%;
+					
 					a{
-						color: @noticias-start-count-bg;
-						margin-left: 30px;
+						color: #a8b2b7;
+						margin-right: 30px;
+						padding-left: 0px;
+					}
+					
+					.col-sm-9{
+						padding-left: 0px;
 					}
 					
 					.bg{
-						background: url(@noticias-disqus) no-repeat;
-						background-position: right;
+						background: url(@noticias-disqus) no-repeat 80%;
+						width: 100%;
 					}
 				}
 			}
+		}
+		
+		.relacionadas{
+			position: relative;
+			top: 100%;
+		}
+	}
+	
+	.news{
+		.noti{
+			margin-top: 15%;
+		}
+		
+		h1{
+			position: absolute;
+			text-align: center;
+			.yanone();
+			font-weight: 100;
+			background: none;
+			width: 100%;
+			top: 9%;
+			color: white;
 		}
 	}
 }
@@ -250,11 +312,7 @@
 	background: white;
 	
 	.body{
-		width: 100%;
-		.noticias{
-			position: absolute;
-			width: 80%;
-			left: 10%;
+		.news{
 			top: 90%;
 		}
 		
@@ -268,70 +326,93 @@
 			padding-top: 10px;
 			padding-bottom: 10px;
 		}
+	}
+}
+
+.contenido.noticias2, .contenido.noticias{
+	.body{
+		position: absolute;
+		width: 100%;
 		
+		.news{
+			position: absolute;
+			top: 100%;
+			width: @noticias-contenido-width;
+			left: (100% - @noticias-contenido-width) / 2;
+		}
+	}
+	.noti{
+		width: 50%;
+		float: left;
+		padding-left: 10px;
+		padding-right: 10px;
 		
-		.noti{
-			width: 50%;
-			float: left;
-			margin-bottom: 150px;
-			padding-left: 10px;
-			padding-right: 10px;
+		.contenedor{
+			position: relative;
+			width: 100%;
+		}
+		
+		.marco{
+			border: 1px solid black;
+			width: 90%;
+			height: 90%;
+			z-index: 1000;
+			position: absolute;
+			left: 5%;
+			top: 5%;
+		}
+		
+		.imagen-new{
+			width: 100%;
+			z-index: -1;
+		}
+		
+		.datos{
+			position: absolute;
+			top: 85%;
+			left: 10%;
+			z-index: 100001;
+			width: 72%;
 			
-			.contenedor{
-				position: relative;
-				width: 100%;
+			.fecha, .titulo{
+				height: 80px;
+				vertical-align: middle;
+				float: left;
+				padding-left: 25px;
+				padding-top: 10px;
 			}
 			
-			.marco{
-				border: 1px solid black;
-				width: 90%;
-				height: 90%;
-				z-index: 1000;
-				position: absolute;
-				left: 5%;
-				top: 5%;
+			.fecha{
+				background: black;
+				color: #989a9c;
+				width: 30%;
+				text-align: left;
+				
+				.yanone();
+				font-weight: 100;
 			}
 			
-			.imagen-new{
-				width: 100%;
-				z-index: -1;
+			.titulo{
+				background: @noticias-contenido-btn-bg;
+				color: #989a9c;
+				width: 70%;
+				text-align: left;
+				
+				.raleway();
+				font-weight: 100;
+				font-size: 18px;
 			}
 			
-			.datos{
-				position: absolute;
-				top: 90%;
-				left: 15%;
-				z-index: 100001;
-				width: 80%;
+			.btn{
+				background: @azul;
+				color: white;
+				.bordeRedondo(0px);
+				float: right;
+				margin-top: 2px;
+				width: 100px;
 				
-				.fecha, .titulo{
-					height: 100px;
-					vertical-align: middle;
-					float: left;
-					padding: 20px;
-				}
-				
-				.fecha{
-					background: black;
-					color: @color-texto;
-					width: 20%;
-				}
-				
-				.titulo{
-					background: @noticias-contenido-btn-bg;
-					color: @color-texto;
-					font-size: 25px;
-					width: 80%;
-				}
-				
-				.btn{
-					background: @azul;
-					color: white;
-					.bordeRedondo(0px);
-					float: right;
-					margin-top: 2px;
-					width: 100px;
-				}
+				.khand();
+				font-weight: 100;
 			}
 		}
 	}
