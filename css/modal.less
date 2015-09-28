@@ -1,0 +1,60 @@
+.modalmask {
+    position: fixed;
+    font-family: Arial, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    
+	&:target {
+	    opacity:1;
+	    pointer-events: auto;
+	}
+	    
+    .modalbox{
+	    width: @modal-width;
+	    left: (100% - @modal-width) / 2;
+	    position: relative;
+	    padding: 25px 20px 13px 20px;
+	    background: #fff;
+	    border-radius:3px;
+	    -webkit-transition: all 500ms ease-in;
+	    -moz-transition: all 500ms ease-in;
+	    transition: all 500ms ease-in;
+	     
+	}
+	
+	.close {
+		background: @azul;
+		color: #FFFFFF;
+		line-height: 25px;
+		position: absolute;
+		right: 30%;
+		text-align: center;
+		top: 10px;
+		width: 24px;
+		text-decoration: none;
+		font-weight: bold;
+		border-radius:3px;
+		z-index: 10;
+		
+		&:hover {
+			background: #FAAC58;
+			color:#222;
+		}
+	}
+	
+	.youtube-player{
+		position: absolute;
+		width: 70%;
+		height: 300px;
+		left: 15%;
+	}
+}
