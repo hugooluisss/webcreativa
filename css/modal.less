@@ -12,6 +12,8 @@
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
     pointer-events: none;
+    padding-top: 50px;
+    height: 100%;
     
 	&:target {
 	    opacity:1;
@@ -20,11 +22,11 @@
 	    
     .modalbox{
 	    width: @modal-width;
+	    height: 100%;
 	    left: (100% - @modal-width) / 2;
 	    position: relative;
-	    padding: 25px 20px 13px 20px;
-	    background: #fff;
-	    border-radius:3px;
+	    padding: 20px 20px 13px 20px;
+	    border-radius: 3px;
 	    -webkit-transition: all 500ms ease-in;
 	    -moz-transition: all 500ms ease-in;
 	    transition: all 500ms ease-in;
@@ -33,28 +35,109 @@
 	
 	.close {
 		background: @azul;
-		color: #FFFFFF;
+		.bordeRedondo(0px;);
+		border: 1px solid #3880e2;
+		color: #b5ccea;
 		line-height: 25px;
 		position: absolute;
-		right: 30%;
+		right: 18%;
 		text-align: center;
-		top: 10px;
+		top: 40px;
 		width: 24px;
 		text-decoration: none;
-		font-weight: bold;
 		border-radius:3px;
 		z-index: 10;
-		
+		opacity: 1;
+		font-weight: 100;
 		&:hover {
-			background: #FAAC58;
-			color:#222;
 		}
 	}
 	
 	.youtube-player{
 		position: absolute;
-		width: 70%;
-		height: 300px;
+		width: @modal-width;
+		height: 400px;
 		left: 15%;
+	}
+	
+	.izq, .der{
+		top: 200px;
+		position: absolute;
+		
+		img{
+			width: 50px;
+		}
+	}
+	
+	.izq{
+		left: 80px;
+	}
+	
+	.der{
+		right: 80px;
+	}
+	
+	
+	.contenido{
+		color: @color-texto;
+		.raleway();
+		position: absolute;
+		top: 430px;
+		
+		width: @modal-width;
+		left: 15%;
+		
+		.separador{
+			background: @azul;
+			width: 50px;
+			height: 10px;
+			
+			margin-bottom: 20px;
+			margin-top: 20px;
+		}
+		
+		.datos, .redes{
+			float: left;
+		}
+		
+		.datos{
+			.yanone();
+			border-right: 0.5px solid #5b5f62;
+			width: 70%;
+			
+			h1{
+				font-weight: 200;
+				font-size: 50px;
+			}
+			
+			p{
+				color: #5b5f62;
+			}
+		}
+		
+		.redes{
+			width: 29%;
+			padding-left: 30px;
+			
+			.separador{
+				width: 100%;
+			}
+			
+			h2{
+				.raleway();
+				font-size: 15px;
+				font-weight: bold;
+			}
+			
+			.btn{
+				background: @azul;
+				width: 30.5%;
+				margin-left: 1%;
+				padding: 10px;
+				.bordeRedondo(0px;);
+				color: white;
+				font-size: 20px;
+			}
+		}
 	}
 }
