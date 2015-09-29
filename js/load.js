@@ -9,3 +9,13 @@ $( document ).ready(function() {
     	$(".footer2").hide();
     });
 });
+
+$( document ).ready(function() {
+	$(".mas").click(function(){
+		$('.informacion[el="' + $(this).attr("el") + '"]').toggle();
+	});
+	
+	$(".mas").each(function(){
+		$('.informacion[el="' + $(this).attr("el") + '"]').hide();
+	});
+});

@@ -14,8 +14,8 @@
 	}
 	
 	.empresas{
-		left: 15%;
-		width: 70%;
+		left: 17.5%;
+		width: 65%;
 		height: 270px;
 		position: absolute;
 		
@@ -23,17 +23,28 @@
 			width: 33.3%;
 			float: left;
 			
+			img{
+				width: 100%;
+			}
+			
 			&.texto{
 				background-color:  @oficinas-texto-background;
 				background-position: left center;
 				background-image: url("../img/oficinas/flecha.png");
 				background-repeat: no-repeat;
-				height: 100%;
-				padding: 10px 40px 40px 40px;
+				height: 240px;
+				padding: 0px 30px 30px 43px;
 				color: @color-texto;
-				font-size: 18px;
+				font-size: 14.5px;
+				.raleway();
+				font-weight: 100;
+				
+				b{
+					font-weight: bold;
+				}
+				
 				hr{
-					height: 10px;
+					height: 1px;
 					width: 100%;
 					color: @color-texto;
 				}

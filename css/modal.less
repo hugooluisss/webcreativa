@@ -5,8 +5,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0,0,0,0.8);
-    z-index: 99999;
+    background: rgba(42,44,47,0.95);
+    z-index: 9999999;
     opacity:0;
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
@@ -53,7 +53,7 @@
 		}
 	}
 	
-	.youtube-player{
+	.youtube-player, .imagenModal{
 		position: absolute;
 		width: @modal-width;
 		height: 400px;
@@ -79,7 +79,7 @@
 	
 	
 	.contenido{
-		color: @color-texto;
+		color: #fff;
 		.raleway();
 		position: absolute;
 		top: 430px;
@@ -89,8 +89,8 @@
 		
 		.separador{
 			background: @azul;
-			width: 50px;
-			height: 10px;
+			width: 35px;
+			height: 7px;
 			
 			margin-bottom: 20px;
 			margin-top: 20px;
@@ -103,24 +103,27 @@
 		.datos{
 			.yanone();
 			border-right: 0.5px solid #5b5f62;
-			width: 70%;
+			width: 80%;
 			
 			h1{
 				font-weight: 200;
 				font-size: 50px;
+				margin-top: 0px;
+				padding-top: 0px;
 			}
 			
 			p{
-				color: #5b5f62;
+				color: #fff;
 			}
 		}
 		
 		.redes{
-			width: 29%;
-			padding-left: 30px;
+			width: 19%;
+			padding-left: 20px;
 			
 			.separador{
 				width: 100%;
+				margin-top: 0px;
 			}
 			
 			h2{
@@ -132,8 +135,8 @@
 			.btn{
 				background: @azul;
 				width: 30.5%;
-				margin-left: 1%;
-				padding: 10px;
+				margin-left: 0.3%;
+				padding: 3px;
 				.bordeRedondo(0px;);
 				color: white;
 				font-size: 20px;
