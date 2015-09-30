@@ -132,7 +132,22 @@ img.fondo{
 	width: 100%;
 }
 
+.btn{
+	background: @azul;
+	.bordeRedondo(0px);
+	
+	.yanone();
+	font-weight: 100;
+	color: #fff;
+	
+	&:hover{
+		color: @pie-menu2-bg;
+	}
+}
+
+@import "style-resp.less";
 @import "index.less";
+@import "index-resp.less";
 @import "contactenos.less";
 @import "galeria.less";
 @import "normatividad.less";
