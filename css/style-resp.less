@@ -1,4 +1,42 @@
-@media (max-width: 480px) {
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: @screen-sm-min) and (max-width: @screen-md-max){
+	nav{
+		background: black;
+		padding-top: 10px;
+	}
+	
+	.nav{
+		height: 100%;
+		& li{
+			font-size: 11px;
+		}
+	}
+	
+	.navbar{
+		.navbar-brand{
+			display: none;
+		}
+	}
+	
+	.btnControlAcceso{
+		height: @nav-height;
+		
+		&:hover{
+			height: @nav-height;
+		}
+	}
+}
+ 
+/* Landscape phone to portrait tablet */
+
+/* Landscape phones and down */
+@media (max-width: @screen-xs-max){
+	img.fondo{
+		height: @responsive-alto;
+		width: 100%;;
+		overflow-x: hidden;
+	}
 	nav{
 		background: black;
 		height: 50px;
@@ -28,5 +66,26 @@
 	
 	.navbar-brand{
 		display: none;
+	}
+	
+	.ancla{
+		position: absolute;
+		left: 49%;
+		top: 81%;
+		
+		img{
+			width: 50%;
+			min-width: 30px;
+		}
+		
+		&.left{
+			left: 5%;
+			top: 81%;
+		}
+		
+		&.right{
+			left: 81%;
+			top: 81%;
+		}
 	}
 }

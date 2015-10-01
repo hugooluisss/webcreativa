@@ -74,6 +74,17 @@ $( document ).ready(function() {
 			y += $(this).width();
 		
 		texto.css({top: pos.top, left: y, position:'absolute'});
-		$(".oficinas .texto").show();
+		if ($(this).attr("visible") == 1){
+			$(this).attr("visible", 0);
+			$(".oficinas .texto").hide();
+		}else{
+			$(".oficinas .texto").show();
+			
+			$(".oficinas .empresa").each(function(){
+				$(this).attr("visible", 0);
+			});
+			
+			$(this).attr("visible", 1);
+		}
 	});
 });

@@ -1,19 +1,189 @@
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {}
- 
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max){}
+
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {}
- 
-/* Landscape phones and down */
-@media (max-width: 480px) {
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
 	.contenido.home{
-		.banner{
-			.empresa{
-				h1{
-					font-size: 14px;
+		.nosotros{
+			.fotos{
+				width: 80%;
+				
+				.lista{
+					[indice="11"]{
+						.nosotros-box(22%, 50%, 80%);
+						.boxTextoIndex(5%, 20%);
+						h1{
+							font-size: 40px;
+						}
+						
+						font-size: 9px;
+					}
+					
 				}
 			}
 		}
+	}
+}
+ 
+/* Landscape phones and down */
+@media (max-width: @screen-xs-max){
+	.contenido.home{
+		.banner{
+			padding-top: 0px;
+			.empresa{
+				top: 10%;
+				width: 100%;
+				h1{
+					font-size: 50px;
+				}
+				
+				.divisor{
+					height: 5px;
+					margin-top: 270px;
+					margin-bottom: 0px;
+					width: 100%;
+				}
+				
+				.btn{
+					padding-top: 3px;
+					padding-bottom: 3px;
+					margin-top: 275px;
+					
+					font-size: 10px;
+				}
+				
+				h2{
+					position: absolute;
+					font-size: 30px;
+					margin-top: 150px;
+					left: 25%;
+				}
+				
+				.nombre{
+					padding-top: 10px;
+					margin-top: 200px;
+					border-top-width: 5px;
+					width: 70%;
+					left: auto;
+					right: 0px;
+				}
+			}
+			
+			.galeriaBanner{
+				width: 30%;
+				position: absolute;
+				top: 350px;
+				right: 32%;
+				
+				img{
+					width: 100%;
+				}
+				
+				.explicacion{
+					position: absolute;
+					top: 5%;
+					width: 85%;
+					left: 7.5%;
+					
+					.texto{
+						position: absolute;
+						top: 35%;
+						left: 10%;
+						width: 80%;
+						height: 40%;
+						font-size: 9px;
+					}
+				}
+			}
+			
+			
+			
+			.infoFotoAutor{
+				top: 445px;
+				right: 2%;
+				
+				span, img{
+					float: right;
+				}
+				
+				padding-top: 0px;
+				
+				img, img:hover{
+					cursor: pointer;
+					width: 20px;
+				}
+				
+				img:hover + .autor {
+				    display: block;
+				}
+				
+				span{					
+					a{
+						font-size: 12px;
+					}
+				}
+			}
+		}
+		
+		.nosotros{
+			.fotos{
+				width: 100%;
+				
+				.lista{
+					[indice]{
+						position: absolute;
+						
+						img.fondo{
+							width: 100%;
+							position: absolute;
+							left: 0px;
+							top: 0px;
+						}
+						
+						.texto{
+							font-size: 6px;
+						}
+						
+						.anio{
+							font-size: 6px;
+						}
+					}
+
+					[indice="1"]{
+						top: 69%;
+						left: 10%;
+						.nosotros-box(7%, 22%, 40%);
+						
+						
+						& a img.info{
+							margin-left: 80%;
+							margin-top: 110%;
+						}
+					}
+					
+					[indice="2"]{
+						top: 53%;
+						left: 27%;
+						.nosotros-box(6.5%, 14%, 40%);
+						
+						& a img.info{
+							margin-left: 70%;
+							margin-top: 100%;
+						}
+					}
+					[indice="11"]{
+						.nosotros-box(37%, 60%, 80%);
+						.boxTextoIndex(0%, 3%);
+						h1{
+							font-size: 39px;
+						}
+						
+						font-size: 8px;
+					}
+					
+				}
+			}
+		}		
 	}
 }
