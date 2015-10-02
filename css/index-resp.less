@@ -4,81 +4,62 @@
 
 /* Landscape phone to portrait tablet */
 @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-	.contenido.home{
-		.nosotros{
-			.fotos{
-				width: 80%;
-				
-				.lista{
-					[indice="11"]{
-						.nosotros-box(22%, 50%, 80%);
-						.boxTextoIndex(5%, 20%);
-						h1{
-							font-size: 40px;
-						}
-						
-						font-size: 9px;
-					}
-					
-				}
-			}
-		}
-	}
 }
  
 /* Landscape phones and down */
 @media (max-width: @screen-xs-max){
 	.contenido.home{
 		.banner{
-			padding-top: 0px;
+			padding-top: 10px;
+			
 			.empresa{
-				top: 10%;
-				width: 100%;
-				h1{
-					font-size: 50px;
-				}
+				position: absolute;
+				top: 25%;
+				width: 53%;
+				margin-bottom: 0px;
 				
 				.divisor{
-					height: 5px;
-					margin-top: 270px;
+					background: black;
+					height: 2px;
+					margin-top: 40%;
 					margin-bottom: 0px;
+					border: none;
 					width: 100%;
 				}
 				
 				.btn{
-					padding-top: 3px;
-					padding-bottom: 3px;
-					margin-top: 275px;
-					
+					margin-top: 40.5%;
 					font-size: 10px;
+					padding-top: 0px;
+					padding-bottom: 0px;
 				}
 				
 				h2{
-					position: absolute;
-					font-size: 30px;
-					margin-top: 150px;
-					left: 25%;
+					top: 0%;
+					font-size: 14px;
+					left: 47%;
 				}
 				
 				.nombre{
-					padding-top: 10px;
-					margin-top: 200px;
-					border-top-width: 5px;
-					width: 70%;
-					left: auto;
-					right: 0px;
+					position: absolute;
+					border-top: 2px solid black;
+					padding-top: 5px;
+					left: 47%;
+					width: 53%;
+					margin-top: 20%;
+					
+					img{
+						width: 100%;
+					}
 				}
+	
 			}
 			
 			.galeriaBanner{
-				width: 30%;
+				width: 25%;
 				position: absolute;
-				top: 350px;
-				right: 32%;
-				
-				img{
-					width: 100%;
-				}
+				top: 34%;
+				right: 5%;
 				
 				.explicacion{
 					position: absolute;
@@ -92,96 +73,282 @@
 						left: 10%;
 						width: 80%;
 						height: 40%;
-						font-size: 9px;
+						text-align: center;
+						font-size: 7px;
 					}
 				}
 			}
 			
-			
-			
-			.infoFotoAutor{
-				top: 445px;
-				right: 2%;
-				
-				span, img{
-					float: right;
-				}
-				
-				padding-top: 0px;
-				
-				img, img:hover{
-					cursor: pointer;
-					width: 20px;
-				}
-				
-				img:hover + .autor {
-				    display: block;
-				}
-				
-				span{					
-					a{
-						font-size: 12px;
-					}
-				}
-			}
 		}
 		
 		.nosotros{
 			.fotos{
 				width: 100%;
-				
+				margin: 0 auto;
+	
 				.lista{
 					[indice]{
-						position: absolute;
-						
 						img.fondo{
-							width: 100%;
-							position: absolute;
-							left: 0px;
-							top: 0px;
+							height: auto;
 						}
 						
-						.texto{
-							font-size: 6px;
+						a img.info{
+							display: none;
 						}
 						
-						.anio{
-							font-size: 6px;
-						}
+						font-size: 7px;
 					}
-
+					
 					[indice="1"]{
-						top: 69%;
-						left: 10%;
-						.nosotros-box(7%, 22%, 40%);
-						
-						
-						& a img.info{
-							margin-left: 80%;
-							margin-top: 110%;
-						}
+						top: 59%;
+						left: 34%
 					}
 					
 					[indice="2"]{
 						top: 53%;
-						left: 27%;
-						.nosotros-box(6.5%, 14%, 40%);
-						
-						& a img.info{
-							margin-left: 70%;
-							margin-top: 100%;
-						}
-					}
-					[indice="11"]{
-						.nosotros-box(37%, 60%, 80%);
-						.boxTextoIndex(0%, 3%);
-						h1{
-							font-size: 39px;
-						}
-						
-						font-size: 8px;
+						left: 42%;
 					}
 					
+					[indice="3"]{
+						top: 49%;
+						left: 47.9%;
+						.nosotros-box(10%, 18%, 45%);
+					}
+					
+					[indice="4"]{
+						.nosotros-box(12%, 27%, 40%);
+						top: 25%;
+						left: 57.9%;
+					}
+					
+					[indice="5"]{
+						.nosotros-box(8%, 10%, 30%);
+						top: 68%;
+						left: 75%;
+					}
+					
+					[indice="6"]{
+						.nosotros-box(7%, 8%, 30%);
+						top: 15%;
+						left: 65%;
+					}
+					
+					[indice="7"]{
+						top: 11.5%;
+						left: 71%;
+						
+						.anio2{
+							font-size: 9px;
+							padding: 2px 2px 2px 2px;
+							top: 47%;
+							left: 73.5%;
+						}
+						
+						& a img.info{
+							margin-left: 95%;
+							margin-top: 107%;
+						}
+					}
+					
+					[indice="8"]{
+						.nosotros-box(30%, 22%, 30%);
+						left: 2%;
+						top: 60%;
+						padding: 0 0 0 0;
+						ul{
+							padding-left: 10px;
+							li{
+								list-style-type: square;
+								color: @nosotros-color-list;
+								
+								span{
+									color: @nav-color;
+									font-size: 7px;
+								}
+							}
+						}
+					}
+					
+					[indice="9"]{
+						.nosotros-box(11%, 11%, 90%);
+						top: 54.5%;
+						left: 59%;
+						
+						& a img.info{
+							margin-left: 80%;
+							margin-top: 40%;
+						}
+					}
+					
+					[indice="10"]{
+						top: 59.5%;
+						right: 4%;
+						
+						[type="button"]{
+							height: auto;
+							padding-top: 1px;
+							padding-bottom: 1px;
+							padding-left: 5px;
+							font-size: 7px;
+						}
+					}
+					
+					[indice="11"]{
+						.nosotros-box(50%, 55%, 90%);
+						.boxTextoIndex(3%, 0%);
+					}
+				}			
+			}
+		}
+		
+		.empresas{
+			.container{
+				top: 5%;
+				left: 0%;
+				
+				.empresasLogo{
+					div{
+						height: 70%;
+						line-height: 70px;
+						vertical-align: middle;
+						margin-right: 1px;
+						margin-bottom: 1px;
+						background: white;
+					}
+					
+					img{
+						width: 90%;
+					}
+				}
+				
+				.texto{
+					position: absolute;
+					.boxTextoIndex(90%, 10%);
+				}
+			}
+			
+			.btn{
+				right: 5%;
+				margin-top: 10px;
+				font-size: 7px;
+			}
+		}
+		
+		.noticias{
+			position: relative;
+			.tituloSeccion{
+				font-size: 20px;
+				width: 100%;
+			}
+			
+			.banda{
+				top: 72%;
+				height: 15px;
+				line-height: 15px;
+				font-size: 10px;
+				
+				a{
+					.yanone();
+					color: white;
+				}
+			}
+			
+			.listNews{
+				width: 90%;
+				height: 100%;
+				position: absolute;
+				left: 5%;
+				top: 20%;
+				
+				.noticia{
+					img{
+						width: 100%;
+					}
+					
+					.marco{
+						width: 70%;
+						left: 15%;
+						height: 90%;
+						top: 5%;
+					}
+					
+					.datos{
+						top: 85%;
+						width: 100%;
+						height: 60%;
+						left: 0px;
+						
+						.fecha, .titulo{
+							height: 100%;
+						}
+						
+						.fecha{
+							background: black;
+							width: 20%;
+							font-size: 6px;
+							position: absolute;
+							padding-top: 1%;
+						}
+						
+						.titulo{
+							width: 50%;
+							font-size: 7px;
+						}
+						
+						.btn{
+							width: 35px;
+							.bordeRedondo(0px);
+							left: 55%;
+							top: 82%;
+							font-size: 8px;
+							padding-left: 10px;
+							padding-top: 2px;
+							padding-bottom: 2px;
+						}
+					}
+				}
+			}
+		}
+		
+		.galeria{
+			div{
+				&[index]{
+					img.info{
+						display: none;
+					}
+					
+							
+					& .texto{
+						position: absolute;
+						top: 0px;
+						width: 100%;
+						height: 100%;
+						padding: 20% 10% 10% 10%;
+						color: @nosotros-color-anio;
+						
+						h1{
+							font-size: 20px;
+						}
+						
+						p{
+							font-size: 10px;
+						}
+						
+						.separador{
+							width: 10px;
+							height: 2px;
+							margin-bottom: 20px;
+							margin-top: 20px;
+						}
+						
+						.btn{
+							.bordeRedondo(0px);
+							width: 100px;
+							&{
+								color: @galeria-texto-background;
+							}
+						}
+					}
 				}
 			}
 		}		
