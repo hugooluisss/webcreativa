@@ -1,102 +1,76 @@
 @media (max-width: @screen-xs-max){
 	.footer, .footer2{
-		width: 100%;
-		height: 300px;
-		
-		.mapa{
-			text-align: right;
-			img{
-				width: 100%;
-				height: auto;
-				vertical-align: middle;
-			}
-		}
-		
 		.localizacion{
 			width: 100%;
-			height: 150px;
+			height: 60%;
 			
 			.ancla-arriba{
 				position: absolute;
-				top: 83%;
-				left: 10%;
+				top: 25%;
+				left: 55%;
 				img{
-					width: 20%;
-					min-width: 20px;
+					width: 50%;
 				}
 			}
 			
-			.float-left{
-				float: left;
-			}
-			
 			.col-i{
-				width: 50%;
-				padding-top: 0px;
-			}
-			
-			.col-d{
-				width: 48%;
-				position: relative;
+				width: 45%;
+				background: white;
+				position: absolute;
+				height: 100%;
 			}
 			
 			.ubicacion{
 				border: none;
-				width: auto;
-				padding-top: 5%;
-				padding-bottom: 5%;
-				margin-right: 0px;
-				height: 150px;
+				width: 100%;
+				margin-right: 10px;
+				padding-left: 10px;
+				right: 5px;
+				left: 0px;
+				top: 5%;
 				
 				div{
-					width: 50%;
-					float: left;
-				}
-				
-				p{
-					padding-bottom: 0%;
+					width: 100%;
+					float: auto;
 				}
 				
 				.logo{
-					padding-top: 2%;
-					
-					img{
-						width: 80%;
-					}
+					display: none;
 				}
 				
 				.direccion{
-					h1{
-						font-size: 12px;
-					}
 					font-size: 8px;
+					
+					h1{
+						font-size: 14px;
+						margin: 0 auto;
+						margin-top: 3px;
+					}
+										
+					hr{
+						margin-top: 3px;
+						margin-bottom: 3px;
+					}
 				}
 				
 				.btn{
-					width: auto;
-					margin-top: 0px;
-					padding-top: 3px;
-					padding-bottom: 3px;
 					font-size: 8px;
-					
-					&:hover{
-						color: @pie-menu2-bg;
-					}
+					width: auto;
 				}
 			}
 		}
 		
 		.menu-footer{
 			position: absolute;
-			width: 100%;
-			top: auto;
-			bottom: 30px;
+			top: 30%;
+			width: auto;
 	
 			z-index: 1000;
 			
 			.iconos{
 				width: 100%;
-				margin-left: auto;
+				margin-left: 2%;
+				text-align: center;
 				.yanone();
 				font-size: 8px;
 				
@@ -111,89 +85,104 @@
 					}
 				}
 				
-				a{
-					color: @color-texto;
-				}
-				
 				.elemento{
+					float: left;
 				}
-
 				
 				.telefono, .email, .cerrar{
 					img{
-						margin-top: 30px;
-						width: 50%;
+						margin-top: 20px;
+						width: 40%;
 					}
 				}
 				
 				.politicas{
-					padding-top: 60px;
+					padding-top: 15%;
 					text-align: left;
-					margin-right: 5px;
-					width: 20%;
+					margin-right: 2%;
 					
 					ul{
+						border-left: none;
 						width: auto;
-						padding-left: 10px;
-						margin-left: 10px;
 						li{
-							margin-bottom: 2px;
+							margin-bottom: 13px;
 						}
 					}
 				}
 				
 				.email{
-					margin-left: 1%;
-					margin-right: 1%;
+					margin-left: 0%;
+					margin-right: 0%;
+					
+					img{
+						width: 34%;
+					}
 				}
 			}
 			
 			.fondo{
-				top: 20%;
+				top: 16%;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				background: @pie-menu-bg;
+				z-index: -1;
 			}
+			
+			
 		}
 		
 		.menu2-footer{
 			width: 100%;
-			bottom: 0px;
-			top: auto;
-			padding-top: 0;
-			padding-bottom: 0;
+			background: @pie-menu2-bg;
+			position: absolute;
+			bottom: 0%;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			z-index: 2000000;
 			
 			.elementos{
-				width: 100%;
-				text-align: center;
-				margin-left: auto;
+				width: 80%;
+				margin-left: 10%;
 			
 				ul{
-					display: none;
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					.khand();
+					font-size: 18px;
+					
+					li{
+						display: inline;
+						float: left;
+						padding-right: 20px;
+						
+						a{
+							display: block;
+							color: @pie-menu2-color;
+						}
+					}
 				}
 				
 				span, img{
-					float: inherit;
-					margin-left: 0;
-					font-size: 10px;
-					position: relative;
-				}
-				
-				span{
-					display: none;
+					float: right;
+					color: @color-texto;
+					margin-left: 20px;
 				}
 				
 				img{
-					margin-top: 5;
-					margin: 0 auto;
+					margin-top: 5px;
 				}
 			}
 		}
 	}
-	
+
 	.footer2{
 		display: none;
 		padding-bottom: 0px;
 		overflow-x: hidden;
 		width: 100%;
-		height: 130px;
+		height: 270px;
 		z-index: 1;
 		
 		.menu-footer{
