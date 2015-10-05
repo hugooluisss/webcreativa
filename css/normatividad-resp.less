@@ -1,0 +1,184 @@
+/* Landscape phone to portrait tablet */
+@media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+	.contenido.normatividad{
+		.banner{
+			padding-top: 30px;
+			.titulo{
+				font-size: 60px;
+				position: absolute;
+				text-align: center;
+				.posicionar(80%);
+				top: 25%;
+			}
+			
+			.divisor{
+				width: 90%;
+			}
+			
+			.texto{
+				font-size: 12px;
+				top: 60%;
+			}
+		}
+		
+		.plan{
+			.contenedor{
+				width: 100%;
+				left: 1%;
+			}
+			.descripcion{
+				.lista{
+					width: 30%;
+					ul{
+						width: 100%;
+						padding-left: 10px;
+						top: 0px;
+						li{
+							padding-top: 2px;
+							padding-bottom: 2px;
+							width: 100%;
+							.raleway();
+							
+							a{
+								font-size: 10px;
+							}
+						}
+					}
+					
+				}
+			}
+		}
+		
+		.footer, .footer2{
+			position: relative;
+		}
+	}
+}
+ 
+/* Landscape phones and down */
+@media (max-width: @screen-xs-max){
+	.contenido.normatividad{
+		.banner{
+			padding-top: 30px;
+			.divisor{
+				width: 80%;
+			}
+			
+			.texto{
+				font-size: 6.5px;
+				width: 70%;
+				left: 15%;
+				top: 60%;
+			}
+		}
+		
+		.plan{
+			padding-top: 50px;
+			
+			.contenedor{
+				width: 100%;
+				left: 1%;
+			}
+			.menu{
+				width: 30%;
+				
+				ul{
+					list-style: none;
+					margin: 0;
+					padding: 0;
+				}
+				
+				li{
+					width: 100%;
+					padding-left: 5px;
+					padding-bottom: 5px;
+					padding-top: 5px;
+					margin-bottom: 5px;
+					
+					&:hover, &.active{
+					}
+					
+					a{
+						color: white;
+						text-decoration: none;
+						font-size: 9px;
+					}
+				}
+			}
+			
+			.descripcion{
+				float: left;
+				width: 69%;
+				padding: 0px 10px 10px 5px;
+				overflow-x: hidden;
+				.raleway();
+				padding-bottom: 50px;
+				
+				h1{
+					font-size: 20px;
+					padding-top: 0px;
+					margin-top: 0px;
+					padding-bottom: 20px;
+					margin-bottom: 40px;
+					
+					.raleway();
+					font-weight: 300;
+				}
+				
+				.youtube-player{
+					margin-bottom: 20px;
+				}
+				
+				.encabezado{
+					width: 100%;
+					margin-bottom: 20px;
+				}
+				
+				p{
+					text-align: justify;
+					font-size: 8px;
+				}
+				
+				.lista, .imagenLista{
+					margin-top: 10px;
+				}
+				
+				.lista{
+					width: 30%;
+					ul{
+						width: 100%;
+						padding-left: 10px;
+						top: 0px;
+						li{
+							padding-top: 2px;
+							padding-bottom: 2px;
+							width: 100%;
+							.raleway();
+							
+							a{
+								font-size: 7px;
+							}
+						}
+					}
+					
+				}
+				
+				.imagenLista{
+					width: 60%;
+					float: right;
+					overflow-x: hidden;
+					margin-left: 30px;
+					
+					img{
+						width: 100%;
+					}
+				}
+			}
+		}
+		
+		.footer, .footer2{
+			position: relative;
+			
+		}
+	}
+}

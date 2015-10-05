@@ -1,0 +1,150 @@
+/* Landscape phone to portrait tablet */
+@media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+}
+
+/* Landscape phones and down */
+@media (max-width: @screen-xs-max){
+	.contenido.noticias2{
+		position: relative;
+		width: 100%;
+		
+		.body{
+			top: 98%;
+	
+			.fondo-noti{
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				top: 50px;
+			}
+				
+			.cargarMas{
+				padding-top: 10px;
+				padding-bottom: 10px;
+				top: 880px;
+				
+				position: absolute;
+			}
+			
+			.noti{
+				height: auto;
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+		}
+	}
+
+
+
+	.contenido.noticias2, .contenido.noticias{
+		.banner{
+			padding-top: 20px;
+			.titulo{
+				.posicionar(100%);
+				
+				span{
+					font-size: 10px;
+				}
+			}
+			
+			.divisor{
+				.posicionar(67%);
+				background: @azul;
+				height: 1px;
+				left: 0px;
+				top: 53%;
+			}
+			
+			.texto{
+				font-size: 5px;
+				text-align: justify;
+				.posicionar(63%);
+				top: 60%;
+			}
+		}
+
+		.body{
+			position: absolute;
+			width: 100%;
+			
+			.news{
+				width: @noticias-contenido-width;
+				left: (100% - @noticias-contenido-width) / 2;
+			}
+		}
+		
+		.noti{
+			width: 45%;
+			float: left;
+			padding-left: 10px;
+			padding-right: 10px;
+			position: relative;
+			margin-bottom: 60px;
+			
+			.contenedor{
+				position: relative;
+				width: 95%;
+				margin-left: 2.5%;
+			}
+			
+			.marco{
+				border: 1px solid black;
+				width: 90%;
+				height: 90%;
+				z-index: 1000;
+				position: absolute;
+				left: 5%;
+				top: 5%;
+			}
+			
+			.imagen-new{
+				width: 100%;
+				z-index: -1;
+			}
+			
+			.datos{
+				position: absolute;
+				top: 85%;
+				left: 5%;
+				z-index: 1001;
+				width: 95%;
+				
+				.fecha, .titulo{
+					height: 30px;
+					padding-left: 3px;
+					padding-top: 0px;
+				}
+				
+				.fecha{
+					background: black;
+					width: 30%;
+					text-align: left;
+					
+					.yanone();
+					font-weight: 100;
+					font-size: 6px;
+				}
+				
+				.titulo{
+					width: 70%;
+					text-align: left;
+					
+					.raleway();
+					font-weight: 100;
+					font-size: 8px;
+				}
+				
+				.btn{
+					margin-top: 2px;
+					width: auto;
+					font-weight: 100;
+					font-size: 8px;
+				}
+			}
+		}
+		
+		.footer, .footer2{
+			position: static;
+		}
+	}
+}

@@ -1,9 +1,27 @@
 
-/* Portrait tablet to landscape and desktop */
-@media (min-width: @screen-md-min) and (max-width: @screen-md-max){}
-
 /* Landscape phone to portrait tablet */
-@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+@media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+	.contenido.nosotros{
+		.banner{
+			.divisor{
+				width: 80%;
+				top: 63%;
+			}
+			
+			.texto{
+				top: 60%;
+				.posicionar(47%);
+				
+				h1{
+					margin-bottom: 0px;
+					top: 47%;
+				}
+				
+				p{
+				}
+			}
+		}
+	}
 }
  
 /* Landscape phones and down */
@@ -58,7 +76,7 @@
 				.sinMargen{
 					margin-left: 0px;
 					margin-right: 0px;
-					padding-left: 50px;
+					padding-left: 5px;
 				}
 				
 				.informacion{
@@ -77,6 +95,9 @@
 					margin-left: 5%;
 					margin-right: 10%;
 					margin-top: 5px;
+					
+					width: 60%;
+					right: 0px;
 				}
 				
 				div{
@@ -166,11 +187,12 @@
 				.informacion{
 					position: absolute;
 					top: 10px;
-					font-size: 8px;
+					font-size: 7px;
 				}
 				
 				.grupo{
 					.mas{
+						display: none;
 						&.izquierda{
 							top: 10px;
 							left: 10px;
@@ -246,7 +268,7 @@
 			[index="2"]{
 				background: url("../img/nosotros/img2.jpg") center center;
 				height: auto;
-				width: 90%;
+				width: 70%;
 				padding-top: 70px;
 				
 				h2{
@@ -260,7 +282,7 @@
 			}
 			
 			[index="4"]{
-				width: 400px;
+				width: 90%;
 				img:first-child{
 					width: 100%;
 				}
@@ -268,7 +290,7 @@
 			}
 			
 			[index="5"], [index="6"]{
-				width: 350px;
+				width: 90%;
 				img:first-child{
 					width: 100%;
 				}
@@ -284,16 +306,17 @@
 			}
 			
 			[index="8"]{
-				width: 350px;
+				width: 90%;
 				img:first-child{
 					width: 100%;
 				}
 			}
 			
 			[index="9"]{
-				width: 500px;
+				width: 90%;
+				margin-left: 0px;
 				.grupo{
-					width: 250px;
+					width: 100%;
 					img:first-child{
 						width: 100%;
 					}
@@ -309,27 +332,27 @@
 			[index="10"]{
 				width: 100%;
 				h1{
-					font-size: 27px;
+					font-size: 20px;
 					margin-top: 30px;
 					margin-bottom: 30px;
 				}
 			}
 			
 			[index="11"]{
-				width: 410px;
+				width: 70%;
 				
 				img:first-child{
-					width: 100px;
+					width: 30%;
 				}
 				
 				img:last-child{
-					width: 190px;
+					width: 60%;
 				}
 				
 			}
 			
 			[index="12"]{
-				width: 380px;
+				width: 90%;
 				
 				img:first-child{
 					width: 100%;
@@ -341,47 +364,47 @@
 				padding-left: 0px;
 				padding-top: 0px;
 				margin-top: 10px;
-				width: 390px;
+				width: 80%;
 			}
 			
 			[index="14"]{
-				width: 300px;
+				width: 100%;
 				img:first-child{
-					width: 100px;
+					width: 20%;
 				}
 				
 				img:last-child{
-					width: 190px;
+					width: 60%;
 				}
 			}
 			
 			[index="15"]{
-				width: 330px;
+				width: 90%;
 				img:first-child{
 					width: 100%;
 				}
 				
 				.informacion{
-					width: 80%;
+					width: 70%;
 				}
 			}
 			
 			[index="16"]{
-				width: 260px;
+				width: 90%;
 				img:first-child{
 					width: 100%;
 				}
 			}
 			
 			[index="17"]{
-				width: 400px;
+				width: 90%;
 				img:first-child{
 					width: 100%;
 				}
 			}
 			
 			[index="18"]{
-				width: 300px;
+				width: 90%;
 				img:first-child{
 					width: 59%;
 				}
@@ -399,32 +422,26 @@
 			}
 			
 			[index="20"]{
-				width: 330px;
-				h3{
-					font-size: 18px;
-				}
-				img{
-					width: 80%;
-				}
+				width: 90%;
 			}
 			
 			[index="21"]{
-				width: 380px;
+				width: 90%;
 				img:first-child{
 					width: 100%;
 				}
 			}
 			
 			[index="22"]{
-				width: 320px;
+				width: 90%;
 				img:first-child{
 					width: 100%;
 				}
 			}
 			
 			[index="23"]{
-				width: 330px;
-				padding-left: 100px;
+				width: 100%;
+				padding-left: auto;
 			}
 		}
 	}

@@ -58,11 +58,11 @@ $( document ).ready(function() {
 
 //Oficinas
 $( document ).ready(function() {
-	$(".oficinas .texto").hide();
-	$(".oficinas .empresa").click(function(){
-		var empresas = $(".empresas");
+	$(".oficinas .data .texto").hide();
+	$(".oficinas .data .empresa").click(function(){
+		var empresas = $(".data .empresas");
 		var pos = $(this).position();
-		var texto = $(".texto");
+		var texto = $(".data .texto");
 		
 		//texto.height($(this).height());
 		y = pos.left;
@@ -76,11 +76,11 @@ $( document ).ready(function() {
 		texto.css({top: pos.top, left: y, position:'absolute'});
 		if ($(this).attr("visible") == 1){
 			$(this).attr("visible", 0);
-			$(".oficinas .texto").hide();
+			$(".oficinas .data .texto").hide();
 		}else{
-			$(".oficinas .texto").show();
+			$(".oficinas .data .texto").show();
 			
-			$(".oficinas .empresa").each(function(){
+			$(".oficinas .data .empresa").each(function(){
 				$(this).attr("visible", 0);
 			});
 			
