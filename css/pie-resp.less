@@ -1,13 +1,14 @@
 @media (max-width: @screen-xs-max){
 	.footer, .footer2{
+		height: 60%;
 		.localizacion{
 			width: 100%;
-			height: 60%;
+			height: 100%;
 			
 			.ancla-arriba{
 				position: absolute;
 				top: 25%;
-				left: 55%;
+				left: auto;
 				img{
 					width: 50%;
 				}
@@ -63,17 +64,17 @@
 		.menu-footer{
 			position: absolute;
 			top: 30%;
-			width: auto;
+			width: 100%;
+			height: 100px;
 	
 			z-index: 1000;
 			
 			.iconos{
-				width: 100%;
-				margin-left: 2%;
-				text-align: center;
+				width: 320px;
+				margin: auto;
 				.yanone();
-				font-size: 8px;
-				
+				font-size: 7px;
+				text-align: center;
 				h1{
 					font-size: 12px;
 					margin-top: 12px;
@@ -99,11 +100,13 @@
 				.politicas{
 					padding-top: 15%;
 					text-align: left;
-					margin-right: 2%;
+					margin-right: 0%;
 					
 					ul{
 						border-left: none;
 						width: auto;
+						margin-left: 0%;
+						padding-left: 2%;
 						li{
 							margin-bottom: 13px;
 						}
@@ -115,18 +118,15 @@
 					margin-right: 0%;
 					
 					img{
-						width: 34%;
+						width: 39.5%;
 					}
 				}
 			}
 			
 			.fondo{
-				top: 16%;
+				top: 36%;
 				width: 100%;
 				height: 100%;
-				position: absolute;
-				background: @pie-menu-bg;
-				z-index: -1;
 			}
 			
 			
@@ -134,40 +134,23 @@
 		
 		.menu2-footer{
 			width: 100%;
-			background: @pie-menu2-bg;
-			position: absolute;
 			bottom: 0%;
-			padding-top: 10px;
-			padding-bottom: 10px;
-			z-index: 2000000;
 			
 			.elementos{
-				width: 80%;
-				margin-left: 10%;
+				width: 100%;
+				margin-left: 0%;
 			
 				ul{
-					list-style-type: none;
-					margin: 0;
-					padding: 0;
-					.khand();
-					font-size: 18px;
-					
-					li{
-						display: inline;
-						float: left;
-						padding-right: 20px;
-						
-						a{
-							display: block;
-							color: @pie-menu2-color;
-						}
-					}
+					display: none;
 				}
 				
 				span, img{
 					float: right;
-					color: @color-texto;
 					margin-left: 20px;
+				}
+				
+				span{
+					display: none;
 				}
 				
 				img{
