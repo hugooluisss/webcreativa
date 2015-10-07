@@ -142,9 +142,55 @@
 				}
 			}
 		}
+	}
+	
+	.contenido.noticias2{
+		position: relative;
+		width: 100%;
+	
+		background: white;
+		.banner{
+			position: relative;
+			width: 100%;
+			
+			.divisor{
+				width: 83%;
+			}
+			
+			.texto{
+				.posicionar(46%);
+				text-align: center;
+			}
+		}
 		
-		.footer, .footer2{
-			position: static;
+		.body{
+			position: relative;
+			top: 93%;
+	
+			.fondo-noti{
+				background: #f7f9fa;
+				position: absolute;
+				height: 850px;
+				width: 100%;
+				top: 50px;
+			}
+				
+			.cargarMas{
+				background: black;
+				color: @color-texto;
+				text-align: center;
+				width: 100%;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				top: 880px;
+				
+				position: absolute;
+			}
+			
+			.noti{
+				padding-left: 0px;
+				padding-right: 0px;
+			}
 		}
 	}
 }
