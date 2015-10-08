@@ -1,0 +1,124 @@
+/* Landscape phone to portrait tablet */
+@media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+	.contenido.contactenos{
+		.banner{
+			padding-top: 20px;
+			.divisor{
+				width: 92%;
+				top: 65%;
+			}
+			
+			.texto{
+				font-size: 10px;
+				top: 70%;
+				.posicionar(80%);
+			}
+		}
+		
+		.formulario{
+			padding-bottom: 80px;
+			padding-top: 30px;
+			.container{
+				width: 100%;
+			}
+			
+			.contenedor{
+				.posicionar(80%, 70%);
+				top: 20%;
+			}
+			
+			form{
+				h1{
+					font-size: 16px;
+				}			
+				.iconos{
+					margin-bottom: 50px;
+					font-size: 12px;
+					font-weight: 100;
+					
+					.col-sm-10{
+						font-weight: 300;
+					}
+					
+					.col-sm-2{
+						text-align: center;
+						img{
+							width: 40px;
+						}
+					}
+				}
+				
+				.politicas{
+					margin-bottom: 150px;
+					
+					.col-sm-9{
+						padding-top: 0px;
+						vertical-align: top;
+					}
+				}
+			}
+			
+		}
+	}
+
+}
+
+/* Landscape phones and down */
+@media (max-width: @screen-xs-max){
+	.contenido.contactenos{
+		.banner{
+			padding-top: 20px;
+			.divisor{
+				width: 80%;
+			}
+			
+			.texto{
+				font-size: 6px;
+				top: 60%;
+				.posicionar(80%);
+			}
+		}
+		
+		.formulario{
+			padding-bottom: 80px;
+			padding-top: 30px;
+			
+			.contenedor{
+				.posicionar(80%, 70%);
+				top: 20%;
+			}
+			
+			form{
+				h1{
+					font-size: 16px;
+				}			
+				.iconos{
+					margin-bottom: 50px;
+					font-size: 12px;
+					font-weight: 100;
+					
+					.col-sm-10{
+						font-weight: 300;
+					}
+					
+					.col-sm-2{
+						text-align: center;
+						img{
+							width: 40px;
+						}
+					}
+				}
+				
+				.politicas{
+					margin-bottom: 150px;
+					
+					.col-sm-9{
+						padding-top: 0px;
+						vertical-align: top;
+					}
+				}
+			}
+			
+		}
+	}
+}
