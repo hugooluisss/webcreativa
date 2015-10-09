@@ -10,13 +10,16 @@ $( document ).ready(function() {
     });
 });
 
+//nosotros
 $( document ).ready(function() {
 	$(".mas").click(function(){
 		$('.informacion[el="' + $(this).attr("el") + '"]').toggle();
+		$('img[el="' + $(this).attr("el") + '"]').toggleClass("opaco");
 	});
 	
 	$(".mas").each(function(){
 		$('.informacion[el="' + $(this).attr("el") + '"]').hide();
+		$('img[el="' + $(this).attr("el") + '"]').removeClass("opaco");
 	});
 });
 
