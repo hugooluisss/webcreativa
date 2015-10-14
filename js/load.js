@@ -67,6 +67,13 @@ $( document ).ready(function() {
 		var pos = $(this).position();
 		var texto = $(".data .texto");
 		
+		var contacto = $("#informacionContacto");
+		contacto.find("h1").html($(this).attr("empresa"));
+		contacto.find("#telefono").html($(this).attr("tel"));
+		contacto.find("#email").html($(this).attr("email"));
+		contacto.find("#horario").html($(this).attr("horario"));
+		contacto.find("#web").html($(this).attr("web"));
+		
 		//texto.height($(this).height());
 		y = pos.left;
 		texto.removeClass("flecha2");
