@@ -15,7 +15,6 @@
 	
 	.navbar{
 		.navbar-brand{
-			display: none;
 		}
 	}
 	
@@ -32,6 +31,24 @@
 
 /* Landscape phones and down */
 @media (max-width: @screen-xs-max){
+	.navbar-header{
+		.navbar-toggle{
+			border: none;
+			margin-top: -2px;
+			
+			span.icon-bar{
+				background-color: white;	
+				margin-top: 2px;
+			}
+		}
+		
+		color: white;
+		text-align: right;
+		.yanone();
+		font-weight: bold;
+		font-size: 18px;
+		padding-top: 0px;
+	}
 	nav{
 		background: black;
 		height: 50px;
@@ -55,12 +72,9 @@
 		background: black;
 		
 		.navbar-brand{
-			width: 100%;
+			width: 40%;
+			margin-left: 5%;
 		}
-	}
-	
-	.navbar-brand{
-		display: none;
 	}
 	
 	.ancla{
