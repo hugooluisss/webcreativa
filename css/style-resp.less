@@ -49,30 +49,58 @@
 		font-size: 18px;
 		padding-top: 0px;
 	}
+	
 	nav{
 		background: black;
 		height: 50px;
 		padding-top: 10px;
+		
+		.navbar-nav{
+			width: 60%;
+			background: @pie-menu2-bg;
+			z-index: 99999;
+			float: right;
+			.opacidad(1);
+		}
+		
+		&.navbar-fixed-top .navbar-collapse{
+			max-height: none;
+		}
 	}
 	
 	.collapse{
 		background: black;
+		height: 800px;
 	}
 	
 	.nav{
-		height: 100%;
-		& li{
-			display: block;
-			font-size: 13px;
-			width: 100%;
+		
+		height: auto;
+		font-size: 18px;
+		
+		&.navbar-left{
+			& li{
+				height: auto;
+				font-size: 12px;
+				
+				& a{
+					display: list-item;
+					height: auto;
+					vertical-align: middle;
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+				
+				&.redesSociales{
+					border-left: solid 1px @nav-color;
+				}
+			}
 		}
 	}
 	
 	.navbar{
-		background: black;
-		
 		.navbar-brand{
-			width: 200px;
+			width: 150px;
 			margin-left: 5%;
 		}
 	}
