@@ -57,9 +57,8 @@
 		
 		.navbar-nav{
 			width: 60%;
-			background: @pie-menu2-bg;
+			background: #1a1c1f;
 			z-index: 99999;
-			float: right;
 			.opacidad(1);
 		}
 		
@@ -74,16 +73,20 @@
 	}
 	
 	.nav{
-		
 		height: auto;
 		font-size: 18px;
 		
+		&.navbar-nav{
+			position: absolute;
+			right: 0px;
+		}
+		
 		&.navbar-left{
-			& li{
+			li{
 				height: auto;
 				font-size: 12px;
 				
-				& a{
+				a{
 					display: list-item;
 					height: auto;
 					vertical-align: middle;
@@ -96,11 +99,23 @@
 				}
 			}
 		}
+		
+		&.navbar-right{
+			top: 315px;
+			li {
+				float: left;
+				display: inline;
+				
+				&.btnControlAcceso{
+					width: auto;
+				}
+			}
+		}
 	}
 	
 	.navbar{
 		.navbar-brand{
-			width: 150px;
+			width: 200px;
 			margin-left: 5%;
 		}
 	}
