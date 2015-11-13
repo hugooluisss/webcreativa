@@ -1,46 +1,26 @@
-/* Landscape phone to portrait tablet */
-@media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
-	.contenido.oficinas{
-		.banner{
-			padding-top: 30px;
-			.titulo{
-				font-size: 60px;
-				position: absolute;
-				text-align: center;
-				.posicionar(80%);
-				top: 25%;
-			}
-			
-			.divisor{
-				width: 80%;
-			}
-			
-			.texto{
-				font-size: 12px;
-				top: 60%;
-				.posicionar(55%);
-			}
-		}
-	}
-}
-
 /* Landscape phones and down */
 @media (max-width: @screen-xs-max){
 	.contenido.oficinas{
 	
 		.banner{
-			padding-top: 30px;
+			background-image: url("../img/oficinas/banner.jpg");
+			
 			.divisor{
-				width: 70%;
+				width: 78%;
 			}
 			
 			.texto{
-				.posicionar(55%);
-				font-size: 6.5px;
-				top: 60%;
+				top: 50%;
+				width: 100%;
+				text-align: center;
+				left: auto;
+				
+				h1{
+					margin-bottom: 0px;
+				}
 			}
 		}
-		
+				
 		.data{
 			background-position: left bottom;
 			background-image: url("../img/oficinas/bg.png");
@@ -48,12 +28,12 @@
 			text-align: center
 			
 			width: 100%;
-			height: 500px;
+			height: 800px;
 			top: 100%;
 		}
 		
 		.empresas{
-			width: 90%;
+			width: 95%;
 			height: 50%;
 			position: absolute;
 			left: 50%;
@@ -84,7 +64,7 @@
 				}
 				
 				h1{
-					font-size: 10px;
+					font-size: 12px;
 					margin-top: 0px;
 					padding-top: 0px;
 					margin-bottom: 0px;

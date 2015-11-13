@@ -1,48 +1,21 @@
-
-/* Landscape phone to portrait tablet */
-@media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+/* Landscape phones and down */
+@media (max-width: @screen-xs-max) and (max-width: @screen-md-max) {
 	.contenido.nosotros{
 		.banner{
+			background-image: url("../img/nosotros/banner.jpg");
+			
 			.divisor{
 				width: 80%;
-				top: 63%;
-			}
-			
-			.texto{
-				top: 60%;
-				.posicionar(47%);
-				
-				h1{
-					margin-bottom: 0px;
-					top: 47%;
-				}
-				
-				p{
-				}
-			}
-		}
-	}
-}
- 
-/* Landscape phones and down */
-@media (max-width: @screen-xs-max){
-	.contenido.nosotros{
-		.banner{
-			.divisor{
-				width: 72%;
 			}
 			
 			.texto{
 				top: 50%;
-				.posicionar(47%);
+				width: 100%;
+				text-align: center;
+				left: auto;
 				
 				h1{
-					font-size: 9px;
 					margin-bottom: 0px;
-				}
-				
-				p{
-					font-size: 8px;
 				}
 			}
 		}
@@ -54,7 +27,6 @@
 			& h1:first-child{
 				width: 100%;
 				font-weight: bold;
-				font-size: 20px;
 				color: white;
 				margin-top: 20px;
 				margin-bottom: 20px;
@@ -63,7 +35,7 @@
 			.izq{
 				text-align: right;
 				float: left;
-				width: 50%;
+				width: 100%;
 				
 				div{
 					margin-right: 5px;
@@ -89,7 +61,7 @@
 			
 			.der{
 				float: left;
-				width: 50%;
+				width: 98%;
 				
 				.informacion{
 					margin-left: 5%;
@@ -115,7 +87,7 @@
 				.sinMargen{
 					margin-left: 0px;
 					margin-right: 0px;
-					padding-left: 10px;
+					padding-left: auto;
 				}
 				
 				h1{
@@ -124,7 +96,7 @@
 			}
 		
 			.borde{
-				border-right: solid @nosotros-border-color 3px;
+				border-right: none;
 			}
 			
 			.border-top{
@@ -140,14 +112,12 @@
 				text-align: left;
 				width: 70%;
 				.raleway();
-				font-size: 8px;
 				
 				margin-bottom: 10px;
 				padding-right: 20px;
 				padding-left: 0px;
 				
 				b{
-					font-size: 12px;
 				}
 				
 				ul{
@@ -263,6 +233,11 @@
 			[index]{
 				margin-left: 10px;
 				width: 90%;
+				
+				img.sinFiltro{
+					filter: brightness(100%);
+					-webkit-filter: brightness(100%);
+				}
 			}
 			
 			[index="2"]{

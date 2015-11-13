@@ -79,9 +79,7 @@
 		&.navbar-nav{
 			position: absolute;
 			right: 0px;
-		}
-		
-		&.navbar-left{
+
 			li{
 				height: auto;
 				font-size: 12px;
@@ -101,7 +99,7 @@
 		}
 		
 		&.navbar-right{
-			top: 315px;
+			top: 310px;
 			li {
 				float: left;
 				display: inline;
@@ -145,34 +143,40 @@
 	}
 	
 	.banner{
+		background-size: auto 450px;
+		background-repeat: no-repeat;
+		background-position: -130px top;
+		height: 450px;
+		
 		.titulo{
-			.posicionar(80%);
+			text-align: center;
 			top: 37%;
 			
 			span{
-				font-size: 25px;
-				.raleway();
-				font-weight: bold;
-				border-top: 2px solid @nosotros-color-box;
-				padding-top: 0px;
+				font-size: 35px;
 			}
 		}
 		
 		.divisor{
-			.posicionar(63%);
 			height: 2px;
 			left: 0px;
-			top: 55%;
+			top: 47%;
 		}
 		
 		.texto{
-			color: white;
-			font-size: 8px;
 			text-align: justify;
-			.posicionar(43%);
 			top: 50%;
-			.raleway();
+			left: auto;
 		}
 	}
 
+
+	#flechaNavegacion{
+		position: fixed;
+		z-index: 1501;
+		bottom: 20px;
+		right: 43%;
+		width: 40px;
+		display: block;
+	}
 }

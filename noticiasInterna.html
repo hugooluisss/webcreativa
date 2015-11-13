@@ -11,10 +11,12 @@
 		<link href='https://fonts.googleapis.com/css?family=Khand:400,900,800,700,600,500,300,200,100' rel='stylesheet' type='text/css' />
 		<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
 		<link type="text/css" rel="stylesheet" href="css/font-awesome.css" rel="stylesheet"/>
-		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		<!-- <link type="text/css" rel="stylesheet" href="css/style.css" />-->
+		<link type="text/css" rel="stylesheet/less" href="css/style.less" />
 	</head>
 	<body>
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<a href="#navegador"><img src="img/pie/arriba.png" id="flechaNavegacion"></a>
+		<nav id="navegador" class="navbar navbar-default " role="navigation">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 					<span class="sr-only">Desplegar navegación</span>
@@ -75,7 +77,7 @@
 						</div>
 					</div>
 				</div>
-				<img class="fondo" src="img/noticias/banner.jpg"/>
+				<img class="fondo hidden-xs" src="img/noticias/banner.jpg"/>
 			</div>
 			<div class="news-contenido">
 				<div class="textoNoticia">
@@ -194,7 +196,7 @@
 							</div>
 						</div>
 					</div>
-					<img class="fondo" src="img/noticias/relacionadas.png"/>
+					<img class="fondo hidden-xs" src="img/noticias/relacionadas.png"/>
 				</div>
 
 			</div>
@@ -209,38 +211,42 @@
 						</div>
 						<div class="direccion">
 							<h1>Ubicación</h1>
-							<hr />
+							<hr class="hidden-xs" />
 							<p>Calle 52 Nº 47–42<br />(Junín con La Playa)<br />Medellín / Colombia</p>
 							<a href="#" class="btn"><img src="img/pie/googleMaps.png" /> VER EN GOOGLE MAPS</a>
 						</div>
 					</div>
 					<br />
-					<a href="#" class="ancla-arriba"><img src="img/pie/arriba.png" /></a>
+					<a href="#" class="ancla-arriba hidden-xs"><img src="img/pie/arriba.png" /></a>
 				</div>
 			</div>
 			<div class="menu-footer">
 				<div class="fondo"></div>
 				<div class="iconos">
-					<div class="edificio elemento hidden-xs">
+					<div class="edificio elemento">
 						<img src="img/pie/logo.png"/>
 					</div>
 					<div class="politicas elemento">
 						<ul>
-							<li><a href="#">Políticas de <br class="visible-xs"/>privacidad y <br class="visible-xs"/>cookies</a>
+							<li><a href="#">Políticas de privacidad y cookies</a>
 							<li><a href="#">FAQ</a>
 						</ul>
 					</div>
 					<div class="telefono elemento">
 						<img src="img/pie/telefono.png"/>
-						<h1>TELÉFONO</h1>
-						333 44 44
+						<div class="datos">
+							<h1>TELÉFONO</h1>
+							<p>333 44 44</p>
+						</div>
 					</div>
 					<div class="email elemento">
 						<img src="img/pie/email.png"/>
-						<h1>E-MAIL</h1>
-						info@edificiocentrocoltejerph.com.co 
+						<div class="datos">
+							<h1>E-MAIL</h1>
+							<p>info@edificiocentrocoltejerph.com.co </p>
+						</div>
 					</div>
-					<div class="cerrar elemento">
+					<div class="cerrar elemento hidden-xs">
 						<a href="#footer" id="btnCerrar">
 							<img src="img/pie/cerrar.png"/>
 							<h1 class="sinBorde">UBICACIÓN</h1>
@@ -317,5 +323,6 @@
 		<script src="librerias/bootstrap-3.3.5/dist/js/bootstrap.min.js" type="text/javascript"></script>
 		
 		<script type="text/javascript" src="js/load.js"></script>
+		<script src="librerias/less/less.js" type="text/javascript"></script>
 	</body>
 </html>
