@@ -45,6 +45,10 @@
 					float: right;
 				}
 				
+				.imagenTexto{
+					margin-right: 20px;
+				}
+				
 				.sinMargen{
 					margin-left: 0px;
 					margin-right: 0px;
@@ -72,12 +76,12 @@
 					right: 0px;
 				}
 				
-				div{
-					margin-left: 10px;
-				}
-				
 				.imagenTexto, .texto{
 					float: left;
+				}
+				
+				.imagenTexto{
+					margin-left: 15px;
 				}
 				
 				.texto{
@@ -157,12 +161,11 @@
 				.informacion{
 					position: absolute;
 					top: 10px;
-					font-size: 7px;
+					font-size: 9.5px;
 				}
 				
 				.grupo{
 					.mas{
-						display: none;
 						&.izquierda{
 							top: 10px;
 							left: 10px;
@@ -234,9 +237,26 @@
 				margin-left: 10px;
 				width: 90%;
 				
-				img.sinFiltro{
-					filter: brightness(100%);
-					-webkit-filter: brightness(100%);
+				img{
+					margin: 10px 5px 10px 5px;
+				}
+				
+				div.grupoImagen{
+					float:right;
+					overflow: hidden;
+					margin-left: 5px;
+	
+					.filtro{
+						background: url("../img/tap-icon.png") no-repeat center center;
+						background-color: rgba(0, 0, 0, 0.8);
+						z-index: 1;
+						position: absolute;
+						
+						&:hover{
+							background: none;
+							background-color: rgba(0, 0, 0, 0);
+						}
+					}
 				}
 			}
 			
@@ -314,16 +334,7 @@
 			}
 			
 			[index="11"]{
-				width: 70%;
-				
-				img:first-child{
-					width: 30%;
-				}
-				
-				img:last-child{
-					width: 60%;
-				}
-				
+				width: 100%;				
 			}
 			
 			[index="12"]{
@@ -344,56 +355,26 @@
 			
 			[index="14"]{
 				width: 100%;
-				img:first-child{
-					width: 20%;
-				}
-				
-				img:last-child{
-					width: 60%;
-				}
 			}
 			
 			[index="15"]{
 				width: 90%;
-				img:first-child{
-					width: 100%;
-				}
-				
-				.informacion{
-					width: 70%;
-				}
 			}
 			
 			[index="16"]{
 				width: 90%;
-				img:first-child{
-					width: 100%;
-				}
 			}
 			
 			[index="17"]{
 				width: 90%;
-				img:first-child{
-					width: 100%;
-				}
 			}
 			
 			[index="18"]{
 				width: 90%;
-				img:first-child{
-					width: 59%;
-				}
-				
-				img:last-child{
-					width: 40%;
-				}
 			}
 			
 			[index="19"]{
 				width: 330px;
-				img{
-					width: 80%;
-				}
 			}
 			
 			[index="20"]{
@@ -402,21 +383,16 @@
 			
 			[index="21"]{
 				width: 90%;
-				img:first-child{
-					width: 100%;
-				}
 			}
 			
 			[index="22"]{
 				width: 90%;
-				img:first-child{
-					width: 100%;
-				}
 			}
 			
 			[index="23"]{
 				width: 100%;
 				padding-left: auto;
+				margin-bottom: 30px;
 			}
 		}
 	}
