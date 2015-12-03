@@ -122,6 +122,24 @@
 					<div class="empresa" visible="0" empresa="coltefinanciera" tel="este es el teléfono" email="miemail@mail.com" horario="Lunes a viernes 8:00 am a 4:00 pm" web="mi.sitio.web">
 						<img src="img/oficinas/coltefinanciera.jpg" />
 					</div>
+					<div class="empresa" visible="0" empresa="coltefinanciera" tel="este es el teléfono" email="miemail@mail.com" horario="Lunes a viernes 8:00 am a 4:00 pm" web="mi.sitio.web">
+						<img src="img/oficinas/coltefinanciera.jpg" />
+					</div>
+					<div class="empresa" visible="0" empresa="coltefinanciera" tel="este es el teléfono" email="miemail@mail.com" horario="Lunes a viernes 8:00 am a 4:00 pm" web="mi.sitio.web">
+						<img src="img/oficinas/coltefinanciera.jpg" />
+					</div>
+					<div class="empresa" visible="0" empresa="coltefinanciera" tel="este es el teléfono" email="miemail@mail.com" horario="Lunes a viernes 8:00 am a 4:00 pm" web="mi.sitio.web">
+						<img src="img/oficinas/coltefinanciera.jpg" />
+					</div>
+					<div class="empresa" visible="0" empresa="coltefinanciera" tel="este es el teléfono" email="miemail@mail.com" horario="Lunes a viernes 8:00 am a 4:00 pm" web="mi.sitio.web">
+						<img src="img/oficinas/coltefinanciera.jpg" />
+					</div>
+					<div class="empresa" visible="0" empresa="coltefinanciera" tel="este es el teléfono" email="miemail@mail.com" horario="Lunes a viernes 8:00 am a 4:00 pm" web="mi.sitio.web">
+						<img src="img/oficinas/coltefinanciera.jpg" />
+					</div>
+					<div class="empresa" visible="0" empresa="coltefinanciera" tel="este es el teléfono" email="miemail@mail.com" horario="Lunes a viernes 8:00 am a 4:00 pm" web="mi.sitio.web">
+						<img src="img/oficinas/coltefinanciera.jpg" />
+					</div>
 				</div>
 			</div>
 			<div class="cargarMas"><a href="#">CARGAR MÁS + </a></div>
@@ -247,5 +265,16 @@
 		<script src="librerias/bootstrap-3.3.5/dist/js/bootstrap.min.js" type="text/javascript"></script>
 		
 		<script type="text/javascript" src="js/load.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var height = 0;
+				var filas = parseInt($(".empresa").length / 3);
+				
+				filas += parseInt($(".empresa").length % 3) > 0?1:0;
+				
+				$(".data").height(filas * $(".empresa:first").height() + 200);
+			});
+		</script>
 	</body>
 </html>
