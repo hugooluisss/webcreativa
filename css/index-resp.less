@@ -1,19 +1,11 @@
-
-/* Portrait tablet to landscape and desktop */
-@media (min-width: @screen-md-min) and (max-width: @screen-md-max){}
-
-/* Landscape phone to portrait tablet */
-@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-}
- 
 /* Landscape phones and down */
-@media (max-width: @screen-md-min){
+@media (max-width: @screen-sm-max){
 	.contenido.home{
 		.banner{
-			padding-top: 10px;
+			padding-top: 0px;
 			height: 480px;
 			background: url("../img/index/banner.png") #0f0f10;
-			background-size: auto 350px;
+			background-size: 900px 350px;
 			background-repeat: no-repeat;
 			background-position: -130px top;
 			
@@ -98,9 +90,10 @@
 		.nosotros{
 			height: 1450px;
 			background: url("../img/index/nosotros.png") #0f0f10;
-			background-size: auto 350px;
+			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: center bottom;
+			
 			.fotos{
 				width: 100%;
 				margin: 0 auto;
@@ -132,43 +125,47 @@
 						top: 280px;
 						left: 4%;
 						.nosotros-box(27%, 110px, 40%);
+						max-width: 100px;
 					}
 					
 					[indice="2"]{
 						top: 280px;
 						left: 38%;
 						.nosotros-box(27%, 100px, 40%);
+						max-width: 90px;
 					}
 					
 					[indice="3"]{
 						top: 280px;
 						left: 69%;
 						.nosotros-box(30%, 120px, 40%);
+						max-width: 100px;
 					}
 					
 					[indice="4"]{
 						.nosotros-box(50%, 210px, 40%);
-						top: 600px;
 						left: 4%;
+						max-width: 200px;
 					}
 					
 					[indice="5"]{
 						.nosotros-box(35%, 85px, 30%);
 						top: 680px;
 						left: 58%;
+						max-width: 200px;
 					}
 					
 					[indice="6"]{
 						.nosotros-box(30%, 70px, 30%);
 						top: 600px;
 						left: 58%;
+						max-width: 200px;
 					}
 					
 					[indice="7"]{
 						top: 860px;
 						left: 4%;
 						.nosotros-box(90%, 350px);
-						background: red;
 						
 						.anio2{
 							padding: 10px 10px 10px 10px;
@@ -239,6 +236,7 @@
 			.container{
 				top: 5%;
 				left: 0%;
+				width: 100%;
 				
 				#listaLogos{
 					margin-top: 200px;
@@ -304,8 +302,9 @@
 				width: 90%;
 				height: 100%;
 				max-width: 300px;
-				position: absolute;
-				left: 5%;
+				position: inherit;
+				
+				margin: 0 auto;
 				top: 60px;
 				
 				.col-xs-12{
@@ -448,5 +447,47 @@
 				}
 			}
 		}		
+	}
+}
+
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+	.contenido.home{
+		.banner{
+			background: url("../img/index/banner.png") #0f0f10;
+			background-repeat: no-repeat;
+			background-position: 0px top;
+			background-size: auto 100%;
+		}
+		
+		.nosotros{
+			.fotos{
+				.lista{
+					[indice="1"]{
+						left: 15%;
+					}
+					[indice="2"]{
+						left: 45%;
+					}
+					[indice="3"]{
+						left: 75%;
+					}
+				}
+			}
+		}
+		
+		.empresas{
+			.container{
+				#listaLogos{
+					margin-top: 0px;
+				}
+			}
+		}
+		
+		.noticias{
+			.listNews{
+				max-width: none;
+			}
+		}
 	}
 }

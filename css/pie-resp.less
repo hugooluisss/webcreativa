@@ -1,4 +1,4 @@
-@media (max-width: @screen-md-max){
+@media (max-width: @screen-sm-max){
 	.footer, .footer2{
 		height: 1350px;
 		position: relative;
@@ -6,8 +6,7 @@
 		clear:both;
 		.localizacion{
 			height: 800px;
-			
-			background-size: auto 300px;
+			background-size: auto 60%;
 			background-repeat: no-repeat;
 			background-position: -400px bottom;
 			
@@ -35,8 +34,12 @@
 				}
 				
 				.logo{
-					width: 70%;
-					margin-left: 15%;
+					width: 100%;
+					text-align: center;
+					img{
+						max-width: 200px;
+					}
+					//margin-left: 15%;
 				}
 				
 				.direccion{
@@ -222,6 +225,56 @@
 		.menu2-footer{
 			bottom: 0px;
 			top: auto;
+		}
+	}
+};
+
+@media (min-width: 837px) and (max-width: @screen-sm-max){
+	.footer, .footer2{
+		.localizacion{
+			background-color: none;
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			background-position: left bottom;
+				
+			.ubicacion{
+			}
+		}
+	}
+};
+
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max){
+	.footer, .footer2{
+		.menu-footer{
+			.iconos{
+				width: 100%;
+				
+				.email{
+					margin-left: 1%;
+					margin-right: 1%;
+					min-width: 200px;
+				}
+		
+				.telefono, .email, .cerrar{
+					height: 80px;
+					padding-top: 20px;
+					width: 100px;
+					
+					img{
+					
+						width: 60px;
+						margin-top: 5px;
+					}
+					
+					.datos{
+						margin-left: 0px;
+						
+						h1{
+							margin-bottom: 0px;
+						}
+					}
+				}
+			}
 		}
 	}
 };
