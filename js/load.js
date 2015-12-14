@@ -1,4 +1,10 @@
 $( document ).ready(function() {
+	//if ($(".banner .fondo").attr("display") == "none")
+		$(".banner").css("background-image",  'url("' + $(".banner .fondo").attr("src") + '")');
+});
+
+
+$( document ).ready(function() {
     $("#btnCerrar").click(function(){
     	$(".footer").hide();
     	$(".footer2").show();
