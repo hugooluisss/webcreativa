@@ -1,31 +1,4 @@
-/* Landscape phone to portrait tablet */
-@media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
-	.modalmask {
-		.contenido{
-			.separador{
-				width: 15px;
-				height: 10px;
-				
-				margin-bottom: 10px;
-				margin-top: 10px;
-			}
-			
-			.datos{
-				width: 80%;
-				
-				h1{
-					font-size: 30px;
-				}
-				
-				p{
-					color: #fff;
-					font-size: 22px;
-				}
-			}
-		}
-	}
-}
- 
+
 /* Landscape phones and down */
 @media (max-width: @screen-md-max){
 	.modalmask {
@@ -133,6 +106,80 @@
 					font-size: 8px;
 				}
 			}
+		}
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+	.modalmask {
+		.contenido{
+			.separador{
+				width: 15px;
+				height: 10px;
+				
+				margin-bottom: 10px;
+				margin-top: 10px;
+			}
+			
+			.datos{
+				width: 80%;
+				
+				h1{
+					font-size: 30px;
+				}
+				
+				p{
+					color: #fff;
+					font-size: 22px;
+				}
+			}
+		}
+		
+		.contenidoVisual{
+		    height: 300px;
+		    
+		    .youtube-player, .imagenModal{
+		        height: 300px;
+		    }
+		}
+		
+		.contenido{
+	        top: 30%;
+	        
+	        .redes{
+				width: 50%;
+				padding-left: 0px;
+				
+				.separador{
+					width: 100%;
+					margin-top: 0px;
+				}
+				
+				h2{
+					font-size: 14px;
+					font-weight: bold;
+				}
+				
+				.btn{
+					margin-left: 0.1%;
+					padding: 3px;
+					font-size: 12px;
+				}
+			}
+	    }
+	    
+	    .izq, .der{
+	        top: 150px;
+	    }
+	    
+	    .izq{
+			left: 5%;
+		}
+		
+		.der{
+			right: 5%;
+			text-align: right;
 		}
 	}
 }

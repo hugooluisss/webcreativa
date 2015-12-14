@@ -77,7 +77,7 @@ $( document ).ready(function() {
 		//texto.height($(this).height());
 		y = pos.left;
 		texto.removeClass("flecha2");
-		if (pos.left + $(this).width() + 10 > empresas.width()){
+		if (pos.left + $(this).width() + 20 > empresas.width()){
 			y -= $(this).width();
 			texto.addClass("flecha2");
 		}else

@@ -1,8 +1,45 @@
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    .contenido.contactenos{
+		.banner{
+		    background-image: url(@bannerFondoContacto);
+			background-position: 0;
+			background-size: cover;
+			position: relative;
+			height: 450px;
+			
+			.divisor{
+				width: 80%;
+				top: 60%;
+			}
+			
+			.texto{
+				top: 65%;
+				width: 50%;
+				text-align: center;
+				left: 25%;
+				
+				h1{
+					margin-bottom: 0px;
+				}
+			}
+		}
+		
+		.formulario{
+		    .container{
+				width: 100%;
+			}
+		}
+	}
+}
+
 /* Landscape phone to portrait tablet */
-@media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
 	.contenido.contactenos{
 		.banner{
-			background-image: url("../img/contactenos/banner.jpg");
+			background-image: url(@bannerFondoContacto);
+			background-position: 0;
+			background-size: cover;
+			height: 450px;
 			
 			.divisor{
 				width: 80%;
@@ -72,7 +109,7 @@
 @media (max-width: @screen-xs-max){
 	.contenido.contactenos{
 		.banner{
-			background-image: url("../img/contactenos/banner.jpg");
+			background-image: url(@bannerFondoContacto);
 			
 			.divisor{
 				width: 90%;

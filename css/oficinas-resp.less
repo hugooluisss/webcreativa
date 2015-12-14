@@ -1,12 +1,12 @@
 /* Landscape phones and down */
-@media (max-width: @screen-xs-max){
+@media (max-width: @screen-md-max){
 	.contenido.oficinas{
 	
 		.banner{
-			background-image: url("../img/oficinas/banner.jpg");
-			
+			background-image: url(@banerFondoOficinas);
+			background-position: 0;
 			.divisor{
-				width: 78%;
+				width: 63%;
 			}
 			
 			.texto{
@@ -23,7 +23,7 @@
 				
 		.data{
 			background-position: left bottom;
-			background-image: url("../img/oficinas/bg.png");
+			
 			padding-top: 0px;
 			padding-bottom: 400px;
 			
@@ -57,7 +57,7 @@
 				background-size: 100% 100%;
 				
 				&.flecha2{
-					background-image: url("../img/oficinas/flecha2.png");
+					background-image: url(@oficinasFlecha2);
 					background-size: 100% 100%;
 					background-position: right center;
 				}
@@ -97,4 +97,50 @@
 			}
 		}
 	}
+}
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-md-max){
+    .contenido.oficinas{
+        .banner{
+            background-position: 0;
+            background-size: cover;
+			.divisor{
+				width: 73%;
+			}
+			
+			.texto{
+				top: 60%;
+				width: 60%;
+				text-align: center;
+				left: 20%;
+				
+				h1{
+					margin-bottom: 0px;
+				}
+			}
+		}
+        
+        .empresas{
+            .data{
+                background-image: none;
+            }
+            .empresa{
+                width: 33%;
+                height: 300px;
+            }
+            
+            .texto{
+                width: 33%;
+                height: 300px;
+                
+                h1{
+                    font-size: 20px;
+                }
+                
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
 }

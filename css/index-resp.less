@@ -4,7 +4,7 @@
 		.banner{
 			padding-top: 0px;
 			height: 480px;
-			background: url("../img/index/banner.png") #0f0f10;
+			background: url(@bannerFondoIndex) #0f0f10;
 			background-size: 900px 350px;
 			background-repeat: no-repeat;
 			background-position: -130px top;
@@ -89,7 +89,7 @@
 		
 		.nosotros{
 			height: 1450px;
-			background: url("../img/index/nosotros.png") #0f0f10;
+			background: url(@bannerFondoIndexNosotros) #0f0f10;
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: center bottom;
@@ -108,7 +108,7 @@
 						
 						.filtro{
 							&.tap{
-								background-image: url("../img/tap-icon.png");
+								background-image: url(@tapIcono);
 							}
 							
 							background-repeat: no-repeat;
@@ -228,7 +228,7 @@
 		
 		.empresas{
 			height: 550px;
-			background: url("../img/index/empresas.png");
+			background: url(@bannerFondoIndexEmpresa);
 			background-size: auto auto;
 			background-repeat: no-repeat;
 			background-position: center bottom;
@@ -273,7 +273,7 @@
 		
 		.noticias{
 			height: 650px;
-			background: url("../img/index/noticiasEventos.png");
+			background: url(@bannerFondoIndexNoticias);
 			background-size: auto 650px;
 			background-repeat: no-repeat;
 			background-position: center bottom;
@@ -454,7 +454,7 @@
 @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
 	.contenido.home{
 		.banner{
-			background: url("../img/index/banner.png") #0f0f10;
+			background: url(@bannerFondoIndex) #0f0f10;
 			background-repeat: no-repeat;
 			background-position: 0px top;
 			background-size: auto 100%;
