@@ -28,6 +28,7 @@
 		width: @noticias-contenido-width;
 		left: (100% - @noticias-contenido-width) / 2;
 		top: 25%;
+		z-index: 100;
 		
 		.img-noticia{
 			width: 100%;
@@ -118,17 +119,19 @@
 		position: relative;
 		
 		background: @noticias-bg;
+		background-size: cover;
+		background-position: 0px;
 		color: @noticias-contenido-color;
 		width: 100%;
 		text-align: center;
-		z-index: -1;
+	//z-index: -1;
 		
 		.textoNoticia{
 			margin-top: 0 auto;
 			width: @noticias-contenido-width;
 			text-align: justify;
 			margin-left: (100% - @noticias-contenido-width) / 2;
-			padding: 100px 50px 50px 50px;
+			padding: 130px 50px 50px 50px;
 			background: white;
 			.raleway();
 			margin-bottom: 100px;

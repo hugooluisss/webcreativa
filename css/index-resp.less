@@ -494,3 +494,58 @@
 		}
 	}
 }
+
+
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max){
+	.contenido.home{
+		.banner{
+			background: url(@bannerFondoIndex) #0f0f10;
+			background-repeat: no-repeat;
+			background-position: 0px top;
+			background-size: auto 100%;
+		}
+		
+		.nosotros{
+			.fotos{
+				.lista{
+					[indice="7"]{
+						.texto{
+							font-size: 8px;
+						}
+						
+						.anio2{
+							top: 40%;
+						}
+					}
+					
+					[indice="8"]{
+						ul{
+							font-size: 10px;
+							li{
+								span{
+									font-size: 11px;
+								}
+							}
+						}
+					}
+					
+					[indice="10"]{
+						right: 17%;
+						a{
+							font-size: 10px;
+						}
+					}
+					
+					[indice="11"]{
+						h1{
+							font-size: 60px;
+						}
+						
+						font-size: 9px;
+					}
+					
+				}
+			}
+		}
+	}
+}
