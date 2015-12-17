@@ -1,30 +1,87 @@
-/* Landscape phone to portrait tablet */
-@media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
-	.contenido.galeria{
-		position: relative;
-		width: 100%;
-		height: 100%;
-		
+@media (max-width: @screen-xs-max){
+    .contenido.galeria{
+	
 		.banner{
 			background-image: url(@bannerFondoGaleria);
 			background-position: 0;
 			background-size: cover;
-			
 			.divisor{
-				width: 58%;
+				width: 75%;
+				top: 240px;
 			}
 			
 			.texto{
 				top: 50%;
-				width: 60%;
+				width: 100%;
 				text-align: center;
-				left: 20%;
+				left: auto;
 				
 				h1{
 					margin-bottom: 0px;
 				}
 			}
 		}
+	}
+}
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max){
+    .contenido.galeria{
+	
+		.banner{
+			background-image: url(@bannerFondoGaleria);
+			background-position: 0;
+			background-size: cover;
+			.divisor{
+				width: 63%;
+			}
+			
+			.texto{
+				top: 50%;
+				width: 80%;
+				text-align: center;
+				left: 10%;
+				
+				h1{
+					margin-bottom: 0px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max){
+    .contenido.galeria{
+	
+		.banner{
+			background-image: url(@bannerFondoGaleria);
+			background-position: 0;
+			background-size: cover;
+			.divisor{
+				width: 73%;
+				top: 60%;
+			}
+			
+			.texto{
+				top: 65%;
+				width: 70%;
+				text-align: center;
+				left: 15%;
+				
+				h1{
+					margin-bottom: 0px;
+				}
+			}
+		}
+	}
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+	.contenido.galeria{
+		position: relative;
+		width: 100%;
+		height: 100%;
 		
 		.cargarMas{
 			height: 40px;
@@ -84,25 +141,6 @@
 		position: relative;
 		width: 100%;
 		height: 100%;
-		
-		.banner{
-			background-image: url(@bannerFondoGaleria);
-			
-			.divisor{
-				width: 80%;
-			}
-			
-			.texto{
-				top: 50%;
-				width: 100%;
-				text-align: center;
-				left: auto;
-				
-				h1{
-					margin-bottom: 0px;
-				}
-			}
-		}
 		
 		.cargarMas{
 			height: 40px;

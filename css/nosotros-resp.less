@@ -1,4 +1,4 @@
-@media (max-width: @screen-md-max) {
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
 	.contenido.nosotros{
 		background-position: bottom center;
 		
@@ -8,14 +8,15 @@
 			background-position: 0px;
 			
 			.divisor{
-				width: 300px;;
+				width: 75%;
+				top: 60%;
 			}
 			
 			.texto{
-				top: 50%;
+				top: 65%;
 				width: 80%;
 				text-align: center;
-				left: auto;
+				left: 10%;
 				
 				h1{
 					margin-bottom: 0px;
@@ -406,11 +407,44 @@
 
 @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
 	.contenido.nosotros{
+		//background-position: bottom center;
+		.banner{
+		    background-size: cover;
+		    background-position: 0;
+		    
+			.divisor{
+				width: 62%;
+				top: 220px;
+			}
+			
+			.texto{
+				top: 50%;
+				width: 80%;
+				text-align: center;
+				left: 10%;
+				
+				h1{
+					margin-bottom: 0px;
+				}
+			}
+		}
+		
+		.body{
+			[index="9"]{
+				width: 30%;
+			}
+		}
+	}
+}
+
+@media (max-width: @screen-xs-max) {
+	.contenido.nosotros{
 		background-position: bottom center;
 		
 		.banner{
 			.divisor{
-				width: 64%;
+				width: 75%;
+				top: 220px;
 			}
 			
 			.texto{

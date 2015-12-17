@@ -1,5 +1,30 @@
 /* Landscape phone to portrait tablet */
-@media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+	.contenido.normatividad{
+		.banner{
+			background-image: url(@banerFondoNormatividad);
+			background-position: 0;
+			
+			.divisor{
+				width: 79%;
+				top: 60%;
+			}
+			
+			.texto{
+				top: 65%;
+				width: 60%;
+				text-align: center;
+				left: 20%;
+				
+				h1{
+					margin-bottom: 0px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
 	.contenido.normatividad{
 		.banner{
 			background-image: url(@banerFondoNormatividad);
@@ -7,6 +32,7 @@
 			
 			.divisor{
 				width: 66%;
+				top: 220px;
 			}
 			
 			.texto{
@@ -20,7 +46,10 @@
 				}
 			}
 		}
-		
+	}
+}
+@media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {		
+    .contenido.normatividad{
 		.plan{
 			.contenedor{
 				width: 100%;
@@ -64,6 +93,7 @@
 			background-position: auto;
 			.divisor{
 				width: 93%;
+				top: 220px;
 			}
 			
 			.texto{
